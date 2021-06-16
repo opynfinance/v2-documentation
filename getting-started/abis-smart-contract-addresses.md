@@ -1,20 +1,10 @@
 ---
 description: >-
-  Gamma protocol is currently Live on Ethereum Mainnet, Ropsten testnet and
+  Gamma protocol is currently live on Ethereum Mainnet, Ropsten testnet and
   Kovan testnet.
 ---
 
 # Smart Contract Addresses
-
-## Which Testnet should I use? 
-
-The core protocol is on both Ropsten and Kovan, and we will deploy our own mintable testnet ERC20 tokens for all the assets we're whitelisting, so you don't have to worry about "where to get USDC?".
-
-There are some differences between the Ropsten and Kovan now: We have a more robust pricer system setup on Kovan since Chainlink\(our oracle source\) is there, so the price of each asset is reported automatically by our bot on a daily basis. 
-
-Ropsten on the other hand, doesn't have a pricer system setup, we will need to manually set expiry price to allow "settlements". If you need a historical price for a specific otoken and it's not written in the Oracle, reach out to us on Discord and we will have you fill in the blank. 
-
-But the great thing about Ropsten is it supports 0x APIs, and we're running market making program to provide liquidity through 0x API. So if you're project require sourcing liquidity from the market, Ropsten may be a better choice.
 
 ## Mainnet
 
@@ -45,6 +35,12 @@ But the great thing about Ropsten is it supports 0x APIs, and we're running mark
 
 ## Ropsten 
 
+_If you need to trade oTokens using 0x, we recommend using Ropsten, since that is the only testnet 0x supports._ 
+
+_Note that Chainlink \(our oracle source\) doesn't support Ropsten, so if you need a historical price for a specific oToken, please reach out to us on_ [_Discord_](https://discord.com/invite/2NFdXaE)_._
+
+🚰[**Testnet Faucet**](https://gammaportal.xyz/#/protocol/faucet/)
+
 #### Core Modules
 
 | Module | Address |
@@ -66,13 +62,14 @@ But the great thing about Ropsten is it supports 0x APIs, and we're running mark
 | USDC | [0x27415c30d8c87437BeCbd4f98474f26E712047f4](https://ropsten.etherscan.io/address/0x27415c30d8c87437BeCbd4f98474f26E712047f4) |
 | WETH | [0xc778417e063141139fce010982780140aa0cd5ab](https://ropsten.etherscan.io/token/0xc778417e063141139fce010982780140aa0cd5ab) |
 | WBTC | [0xe477d1FFC1e5eA6a577846a4699617997315B4ee](https://ropsten.etherscan.io/address/0xe477d1FFC1e5eA6a577846a4699617997315B4ee) |
-|  |  |
-
-
 
 ## Kovan
 
-_Note that 0x is deprecated on Kovan, so our kovan testnet won't allow creating, buying, or selling orders. We recommend testing with Ropsten._
+_Note that 0x is deprecated on Kovan, so our kovan testnet won't allow creating, buying, or selling orders. We recommend testing with Ropsten if you need 0x functionality._ 
+
+_If you don't need 0x functionality, Kovan is a better choice, since Chainlink \(our oracle source\) is on Kovan and will automatically report prices._
+
+🚰[**Testnet Faucet**](https://gammaportal.xyz/#/protocol/faucet/)
 
 #### Core Modules
 
