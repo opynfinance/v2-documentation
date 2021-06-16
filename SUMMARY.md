@@ -1,18 +1,23 @@
 # Table of contents
 
-* [Getting Started](README.md)
-* [Opyn v2 FAQ](faq.md)
-* [Opyn V1 Docs](https://opyn.gitbook.io/opynv1/)
+* [Opyn v2 FAQ](README.md)
+* [Security](security.md)
+
+## Getting Started
+
+* [Introduction](getting-started/introduction.md)
+* [Use Cases](getting-started/use-cases.md)
+* [Smart Contract Addresses](getting-started/abis-smart-contract-addresses.md)
+* [Protocol Math](getting-started/protocol-math.md)
+* [Grants Program](https://www.notion.so/opynopyn/Opyn-Ecosystem-Grants-627f298f1eec49c1914172b929a03932)
 
 ## Gamma Protocol <a id="get-started"></a>
 
-* [Security](get-started/security.md)
-* [Glossary of Terms](get-started/glossary-of-terms.md)
-* [System Roles](get-started/protocol-overview-and-glossary-of-terms.md)
-* [Smart Contract Addresses](get-started/abis-smart-contract-addresses.md)
+* [System Roles & Terms](get-started/protocol-overview-and-glossary-of-terms.md)
 * [Whitelisted Products](get-started/whitelisted-products.md)
+* [Taking Actions](get-started/actions.md)
 
-## Contracts Documentation <a id="contracts"></a>
+## Contracts
 
 * [Contract Architecture](contracts/contract-architecture.md)
 * [AddressBook](contracts/addressbook-1.md)
@@ -20,19 +25,16 @@
 * [oToken](contracts/otoken.md)
 * [oTokenFactory](contracts/otokenfactory.md)
 * [Controller](contracts/controller.md)
-* [Actions](contracts/actions.md)
 * [MarginCalculator](contracts/margincalculator.md)
 * [Oracle](contracts/oracle.md)
 * [MarginPool](contracts/marginpool.md)
 * [MarginVault](contracts/marginvault.md)
 
-## API
+## Subgraph
 
-* [Subgraph](api/subgraph.md)
+* [Common Subgraph Queries](subgraph/subgraph.md)
 
-## Control Flow Diagrams
+---
 
-* [AddressBook](control-flow-diagrams/addressbook.md)
-* [Whitelist](control-flow-diagrams/whitelist.md)
-* [Controller](control-flow-diagrams/controller.md)
+* [Opyn V1 Docs](https://opyn.gitbook.io/opynv1/)
 

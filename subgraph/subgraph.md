@@ -1,4 +1,4 @@
-# Subgraph
+# Common Subgraph Queries
 
 This section explains the Gamma Subgraph and how to interact with it. The Gamma subgraph indexes data from the Gamma contracts over time. It organizes data about user vaults, tokens balances, and oTokens as a whole, and more. The subgraph updates any time a transaction is made, and it is running on [The Graph](https://thegraph.com/) protocol’s hosted service and can be openly queried.
 

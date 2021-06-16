@@ -1,10 +1,10 @@
 ---
 description: >-
-  A library that provides a ActionArgs struct, sub types of Action structs, and
-  functions to parse ActionArgs into specific Actions.
+  The action library provides a ActionArgs struct, sub types of Action structs,
+  and functions to parse ActionArgs into specific Actions.
 ---
 
-# Actions
+# Taking Actions
 
 To use the operate function in Controller, you need to put in array of actions as input. An `Action struct` is defined as follow:
 

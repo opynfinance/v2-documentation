@@ -8,6 +8,8 @@ Anyone can create new oTokens if a product has been whitelisted. A product is a 
 | :--- | :--- | :--- | :--- |
 | WETH | USDC | USDC | Put |
 | WETH | USDC | WETH | Call |
+| WBTC | USDC | USDC | Put |
+| WBTC | USDC | WBTC | Call |
 
 
 

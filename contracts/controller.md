@@ -73,7 +73,7 @@ execute a number of actions on specific vaults. Can only be called when the syst
 
 **Parameters:**
 
-* `_actions`: array of actions arguments. Refers to [Actions](actions.md) page for more detail.
+* `_actions`: array of actions arguments. Refers to [Actions](../get-started/actions.md) page for more detail.
 
 #### `isOperator(address _owner, address _operator) → bool`
 
