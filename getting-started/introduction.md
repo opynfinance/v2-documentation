@@ -56,7 +56,7 @@ Gamma Protocol is the most capital efficient options protocol allowing for:
 * [Flash Minting](https://opyn.gitbook.io/opyn/#what-is-a-flash-mint) oTokens 
 * [Operators](https://opyn.gitbook.io/opyn/#what-is-an-operator) \(useful for rolling over vaults, creating perpetual positions, and more\)
 * Option strategies 
-  * In addition to the basics outlines above you can also hedge / leverage / earn yield with complex positions like [straddles & strangles](https://www.investopedia.com/ask/answers/05/052805.asp), [the wheel](https://seekingalpha.com/instablog/1046492-markus-heitkoetter/5514813-wheel-option-strategy-example), [principal protected notes](https://www.investopedia.com/terms/p/principalprotectednote.asp) and more
+  * In addition to buying & selling single options outlined above you can also hedge / leverage / earn yield with combined positions like [straddles & strangles](https://www.investopedia.com/ask/answers/05/052805.asp), [the wheel](https://seekingalpha.com/instablog/1046492-markus-heitkoetter/5514813-wheel-option-strategy-example), [principal protected notes](https://www.investopedia.com/terms/p/principalprotectednote.asp) and more
 
 Opyn v2 options are **cash settled, European** options. 
 
