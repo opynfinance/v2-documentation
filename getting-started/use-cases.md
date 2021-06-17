@@ -7,7 +7,7 @@ Options are an incredibly versatile financial instrument - in fact you can creat
 We're excited to see what you'll build! Here are some ideas to get started:
 
 {% hint style="info" %}
-Join `#dev on` [**Discord**](https://discord.gg/ugAv3SH) to jam on these ideas and more!
+Join `#dev`on [**Discord**](https://discord.gg/ugAv3SH) to jam on these ideas and more!
 {% endhint %}
 
 ### **Hedging for Uniswap LPs** <a id="2b8e"></a>
