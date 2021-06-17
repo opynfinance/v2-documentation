@@ -64,7 +64,7 @@ Opyn v2 options are **cash settled, European** options.
 * European: option holders can exercise options only upon expiry
 
 {% hint style="info" %}
-Please join the `#dev` room in the Opyn community [**Discord**](https://discord.gg/ugAv3SH) server - we're hyped to help you build on Opyn!
+Join`#dev`on  [**Discord**](https://discord.gg/ugAv3SH) - we're hyped to help you build on Opyn!
 {% endhint %}
 
 ## Resources 
