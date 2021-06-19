@@ -1,12 +1,14 @@
----
-description: >-
-  The action library provides a ActionArgs struct, sub types of Action structs,
-  and functions to parse ActionArgs into specific Actions.
----
-
 # Taking Actions
 
-To use the operate function in Controller, you need to put in array of actions as input. An `Action struct` is defined as follow:
+The main way to interact with the protocol is through a single function called [`operate`](https://github.com/opynfinance/GammaProtocol/blob/386386bac50e24816931190a243e1f220d043c29/contracts/core/Controller.sol#L411). This `operate` function takes in [`actions`](https://github.com/opynfinance/GammaProtocol/blob/master/contracts/libs/Actions.sol) as parameters, where each action specifies what you'd like to do \(eg. add collateral, mint options\). 
+
+This pattern allows you to string together multiple actions into one `operate` call to achieve many interactions with one call \(eg. creating a short position by putting down collateral and minting options\). 
+
+Additionally, collateralization is only checked at the end of an operation, allowing for flash mint functionality, where you mint an option, sell it, and then use the proceeds from selling as collateral. 
+
+## Action Structure
+
+To use the `operate` function in [Controller](https://github.com/opynfinance/GammaProtocol/blob/master/contracts/core/Controller.sol), you need to input an array of actions. An [`Action struct`](https://github.com/opynfinance/GammaProtocol/blob/386386bac50e24816931190a243e1f220d043c29/contracts/libs/Actions.sol#L29) is defined as follows:
 
 ```javascript
 struct ActionArgs {
@@ -38,7 +40,7 @@ struct ActionArgs {
   * each vault can hold multiple short / long / collateral assets but we are restricting the scope to only 1 of each in this version. in future versions this would be the index of the short / long / collateral asset that needs to be modified
 * `data`: used for arbitrary function calls
 
-## ActionType
+## Available Actions
 
 ```javascript
 enum ActionType {

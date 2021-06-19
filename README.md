@@ -64,6 +64,12 @@ For example, say there is an orderbook with an ask for 15 oTokens at 100 USDC an
 
 Total return is calculated as the difference between the initial premium and the current premium, where the current premium is the best bid or ask available. In the case that an option's in-the-money amount is greater than the amount you could sell the option for, the in-the-money amount is used to calculate the total return rather than the current premium. 
 
+### My hardware wallet isn't working with permit, what do I do?  
+
+Some hardware wallets don't support permit signatures. In order to use a normal "approve" instead of permit signatures, you can click the "gear" icon on the top right of the order ticket and select "approve." 
+
+![](.gitbook/assets/screen-shot-2021-06-18-at-11.44.49-pm.png)
+
 ## Limit Orders 
 
 ### How do limit orders work? 
