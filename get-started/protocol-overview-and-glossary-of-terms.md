@@ -13,11 +13,11 @@
 
 ## Operators
 
-Every account can define multiple operators. An operator is an address that can update the account's positions on behalf of the account. That means, an operator has the privilege to move an ERC20 token from the account's address into a vault, if the account has approved the MarginPool contracts beforehand, or it can also take out excess collateral from a vault to any address. Usually you won't want to add any EOA as operator.
+Operators allow users to delegate control of their vaults to a third party smart contract or EOA. This could be a smart contract that rolls over their options for them, an EOA fund manager to do trades for them, or a vast possibility of other interactions that developers can build on top of the protocol.
 
-Operator is a very critical role in Gamma. With this design, we can enable lots of innovation like rollover contract, auto-minting AMM to be built on top of Gamma.
+Operators have full control over user funds and can take any action on behalf of a user. The only action operators cannot take is to add new operators or remove new operators. Every account can define multiple operators.
 
-Operators have full control over user funds and can take any action on behalf of a user. The only action operators cannot take is to add new operators or remove new operators.
+An example use of an existing operator, is the [PayableProxy contract](https://github.com/opynfinance/GammaProtocol/blob/master/contracts/external/proxies/PayableProxyController.sol) which takes ETH from users and converts it to WETH to use in the system. 
 
 ## Glossary of Terms
 

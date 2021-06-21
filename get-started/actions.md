@@ -8,7 +8,7 @@ This pattern allows you to string together multiple actions into one `operate` c
 
 Additionally, collateralization is only checked at the end of an operation, allowing for flash mint functionality, where you mint an option, sell it, and then use the proceeds from selling as collateral. 
 
-For how to sell oTokens once they've been minted, or ways to buy oTokens see Trading oTokens. oToken trades are not done through the core protocol, but through any venue that supports ERC20 trading. 
+For how to sell oTokens once they've been minted, or ways to buy oTokens [see Trading oTokens](https://opyn.gitbook.io/opyn/get-started/trading-otokens). oToken trades are not done through the core protocol, but through any venue that supports ERC20 trading. 
 
 ## Action Structure
 
