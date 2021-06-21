@@ -17,6 +17,7 @@
 * [Whitelisted Products](get-started/whitelisted-products.md)
 * [Protocol Math](get-started/protocol-math.md)
 * [Taking Actions](get-started/actions.md)
+* [Trading oTokens](get-started/trading-otokens.md)
 
 ## Contracts
 

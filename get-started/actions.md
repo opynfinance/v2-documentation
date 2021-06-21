@@ -1,10 +1,14 @@
 # Taking Actions
 
+## Protocol Actions
+
 The main way to interact with the protocol is through a single function called [`operate`](https://github.com/opynfinance/GammaProtocol/blob/386386bac50e24816931190a243e1f220d043c29/contracts/core/Controller.sol#L411). This `operate` function takes in [`actions`](https://github.com/opynfinance/GammaProtocol/blob/master/contracts/libs/Actions.sol) as parameters, where each action specifies what you'd like to do \(eg. add collateral, mint options\). 
 
 This pattern allows you to string together multiple actions into one `operate` call to achieve many interactions with one call \(eg. creating a short position by putting down collateral and minting options\). 
 
 Additionally, collateralization is only checked at the end of an operation, allowing for flash mint functionality, where you mint an option, sell it, and then use the proceeds from selling as collateral. 
+
+For how to sell oTokens once they've been minted, or ways to buy oTokens see Trading oTokens. oToken trades are not done through the core protocol, but through any venue that supports ERC20 trading. 
 
 ## Action Structure
 
@@ -30,19 +34,22 @@ struct ActionArgs {
 }
 ```
 
-* [`actionType`](actions.md#actiontype): type of action that is being performed on the system. To create an action, you put a actionTypes and **the fields required for that specific action**. \(Leave other fields as default.\)
-* `owner`: owner of the vault, if it's an action on a vault.
-* `vaultId`: the id of the vault, if it's an action on a vault.
-* `secondAddress`: another address field \(usage depend on the action type\)
+* `actionType`: type of action that is being performed on the system. 
+* `owner`: vault owner's address 
+* `vaultId`: the id of the vault to be modified 
+* `secondAddress`: another address field \(usage dependent on action type\)
 * `asset`: asset that is being transferred.
 * `amount`: amount of asset
 * `index`: always 0 for the current version.
-  * each vault can hold multiple short / long / collateral assets but we are restricting the scope to only 1 of each in this version. in future versions this would be the index of the short / long / collateral asset that needs to be modified
+  * each vault can hold multiple short / long / collateral assets but we are restricting the scope to only 1 of each in this version. In future versions this would be the index of the short / long / collateral asset that needs to be modified
 * `data`: used for arbitrary function calls
 
 ## Available Actions
 
+To create an action, you must specify actionType and **the fields required for that specific action**. You can leave the other fields as default values. 
+
 ```javascript
+//types of actions available 
 enum ActionType {
     OpenVault,
     MintShortOption,
@@ -93,9 +100,9 @@ Deposit collateral asset into a vault. This allow you to mint options against th
 
 * `owner` : the vault owner. 
 * `vaultId`: the vault id to deposit into
-* `secondAddress`: from what address to deposit the collateral assets. It can only be either `msg.sender`or the owner \(if `msg.sender` is an **operator** of owner\).
+* `secondAddress`: the address depositing the collateral assets. It can only be either `msg.sender`or the owner \(if `msg.sender` is an [**operator**](https://opyn.gitbook.io/opyn/get-started/protocol-overview-and-glossary-of-terms#operators) of owner\).
 * `asset`: the address of the **collateral** you want to deposit.
-* `index`: 0.
+* `index`: 0
 * `amount`: amount to deposit
 
 {% tabs %}
@@ -122,12 +129,12 @@ await controller.operate(args)
 
 ### WithdrawCollateral
 
-Withdraw collateral from a vault. \(Opposite to DepositCollateral\)
+Withdraw collateral from a vault. \(Opposite of DepositCollateral\)
 
 #### Required Fields:
 
 * `owner` : the vault owner. 
-* `vaultId`: the vault id to withdraw from 
+* `vaultId`: the vault id to withdraw collateral from 
 * `secondAddress`: destination address to withdraw collateral to.
 * `asset`: the address of the **collateral** you want to withdraw
 * `index`: 0.
@@ -156,13 +163,13 @@ await controller.operate(args)
 
 ### DepositLongOption
 
-Deposit an oTokens into a vault. This allow you to create spreads \(Use less collateral to mint an option.\)
+Deposit an oTokens into a vault. This allows you to create [spreads](https://opyn.gitbook.io/opyn/#what-is-a-spread) \(using an option to collateralize other options\).
 
 #### Required Fields:
 
 * `owner` : the vault owner. 
 * `vaultId`: the vault id to deposit into
-* `secondAddress`: from what address to deposit the oTokens. it can only be either `msg.sender`or the owner \(if `msg.sender` is an **operator** of owner\).
+* `secondAddress`: the address depositing the oTokens. It can only be either `msg.sender`or the owner \(if `msg.sender` is an [**operator**](https://opyn.gitbook.io/opyn/get-started/protocol-overview-and-glossary-of-terms#operators) of owner\).
 * `asset`: the address of the **oToken** you want to deposit
 * `index`: 0.
 * `amount`: amount to deposit
@@ -191,13 +198,13 @@ await controller.operate(args)
 
 ### WithdrawLongOption
 
-Withdraw a long oTokens from a vault. \(Opposite to DepositLongOption\)
+Withdraw a long oTokens from a vault. \(Opposite of DepositLongOption\)
 
 #### Required Fields:
 
 * `owner` : the vault owner. 
 * `vaultId`: the vault id to withdraw from 
-* `secondAddress`: what address to withdraw long oTokens to.
+* `secondAddress`: destination address to withdraw long oTokens to.
 * `asset`: the address of the **oToken** you want to withdraw
 * `index`: 0.
 * `amount`: amount to withdraw
@@ -231,7 +238,7 @@ Mint oTokens from a vault.
 
 * `owner` : the vault owner. 
 * `vaultId`: the vault id to mint from 
-* `secondAddress`: the receiver address
+* `secondAddress`: destination address that receives the minted oTokens \(most often the owner who is minting\)
 * `asset`: the address of the oToken you want to mint
 * `index`: 0.
 * `amount`: amount to mint
@@ -265,7 +272,7 @@ Burn oTokens from a vault.
 
 * `owner` : the vault owner. 
 * `vaultId`: the vault id to mint from 
-* `secondAddress`: the receiver address
+* `secondAddress`: address from which the oTokens are transferred \(most often owner address\) 
 * `asset`: the address of the oToken you want to burn
 * `index`: 0.
 * `amount`: amount to burn
@@ -293,7 +300,7 @@ await controller.operate(args)
 
 ### SettleVault
 
-Settle a vault after expiry. If the vault contain short oTokens and collateral, this function will payout the excess collateral based on spot price at expiry. 
+Settle a vault after expiry. If the vault contains minted oTokens and collateral, this function will payout the excess collateral based on spot price at expiry. 
 
 #### Required Fields:
 
@@ -323,7 +330,7 @@ await controller.operate(args)
 
 ### Redeem
 
-Redeem expired oTokens for collateral. All oTokens are auto-exercised at expiry, and any oTokens holder can use this redeem function to claim the payout if the oToken expires in the money.
+Redeem expired oTokens for collateral. All oTokens are auto-exercised at expiry, and any oToken holder can use this redeem function to claim the payout if the oToken expires in the money.
 
 #### Required Fields:
 
@@ -368,9 +375,39 @@ Call an arbitrary contract. The protocol started under **restricted mode**, whic
 * `amount`: amount of ETH to attach to the call
 * `data`: other arbitrary data to call the contract with
 
+**Example using** [**PermitCallee**](https://github.com/opynfinance/GammaProtocol/blob/master/contracts/external/callees/PermitCallee.sol)
+
+* The action arguments will differ based on any given callee's requirements
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
+const owner = "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c"
+const signedMessage = await signERC2612Permit(wallet.provider, tokenId, owner, spenderAddress.toString(), value, maxDeadline, nonce);
+const data = ethers.utils.defaultAbiCoder.encode(
+ ['address', 'address', 'address', 'uint256', 'uint256', 'uint8', 'bytes32', 'bytes32'],
+ [tokenId, owner, spenderAddress, value.toString(), maxDeadline, signedMessage.v, signedMessage.r, signedMessage.s],
+)
+
+const args = [{
+    actionType: ActionType.Call,
+    owner: owner,
+    secondAddress: ZERO_ADDRESS,
+    asset: ZERO_ADDRESS,
+    vaultId: 0,
+    amount: 0,
+    index: 0,
+    data: data,
+}]
+await controller.operate(args)       
+```
+{% endtab %}
+{% endtabs %}
+
 ## Combining Actions
 
-In the **operate** function in Controller contract takes in an array of actions. This enable some more advance usage to combine all the actions or do some kind of flash trade. 
+The **operate** function in Controller contract takes in an array of actions. This enable some more advance usage to combine all the actions or do some kind of flash trade. 
 
 ### Constraints
 
