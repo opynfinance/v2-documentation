@@ -4,6 +4,8 @@ Opyn options \(oTokens\) are ERC20s, so they can be traded on any decentralized 
 
 oTokens on [opyn.co](http://opyn.co/) currently trade on [0x](https://0x.org/), but [v1.opyn.co](https://v1.opyn.co/#/) oTokens traded on [Uniswap](http://uniswap.org/), and projects integrating with Opyn have traded oTokens on [Balancer](https://twitter.com/aaveaave/status/1286371566708826112?lang=en) and [Airswap](https://trader.airswap.io/).  
 
+To learn how to take other protocol actions eg. add collateral, mint oTokens, settlement after expiry please see [Taking Actions](https://opyn.gitbook.io/opyn/get-started/actions). 
+
 ## Trade on 0x 
 
 oTokens on [opyn.co](http://opyn.co/) currently trade on [0x](https://0x.org/). You can view existing bids + asks, and buy / sell oTokens using [0x API](https://0x.org/docs/api). 
