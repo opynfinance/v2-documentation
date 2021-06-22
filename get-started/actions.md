@@ -94,7 +94,7 @@ await controller.operate(args)
 
 ### DepositCollateral
 
-Deposit collateral asset into a vault. This allow you to mint options against the vault.
+Deposit collateral asset into a vault. This allow you to mint options against the vault. 
 
 #### Required Fields:
 
@@ -121,6 +121,7 @@ const args = [{
     index: 0,
     data: ZERO_ADDRESS,
 }]
+//approve collateral to margin pool
 await ERC20(USDC).approve(marginPool.address, 100 * 1*6)
 await controller.operate(args)
 ```
@@ -190,6 +191,7 @@ const args = [{
     index: 0,
     data: ZERO_ADDRESS,
 }]
+// approve oToken collateral to margin pool
 await ERC20(ETHUSD200Put).approve(marginPool.address, 100 * 1*8)
 await controller.operate(args)
 ```
@@ -362,7 +364,7 @@ await controller.operate(args)
 
 ### Call
 
-Call an arbitrary contract. The protocol started under **restricted mode**, which we maintain a whitelist of Callee address to receive call from the Controller during an operate function call. In the future, anyone can create arbitrary Callee contracts and call it with other actions in one transaction. 
+Call an arbitrary contract. The protocol is currently under **restricted mode**, where we maintain a whitelist of Callee addresses that can receive calls from the Controller during an operate function call. In the future, anyone can create arbitrary Callee contracts and call it with other actions in one transaction. 
 
 #### Required fields:
 
@@ -407,14 +409,241 @@ await controller.operate(args)
 
 ## Combining Actions
 
-The **operate** function in Controller contract takes in an array of actions. This enable some more advance usage to combine all the actions or do some kind of flash trade. 
+The **operate** function in Controller contract takes in an array of actions. This allows you to combine actions! We'll outline some common combinations here. 
 
-### Constraints
+#### Constraints
 
 1. In the first version, we restrict all the actions in a single operate call to have the same `owner` and `vaultId` field if it's an action on a vault, except `SettleVault`. This mean you cannot create multiple vaults nor deposit assets into multiple vaults in a single transaction.
-2. Also as mentioned in the Call section, we will start the protocol under restricted mode that only whitelisted contracts can be called during an operate call.
+2. Also as mentioned in the Call section, we will start the protocol under restricted mode that only whitelisted callee contracts can be called during an operate call.
 
+### Create Short Position
 
+Combines the [OpenVault](https://opyn.gitbook.io/opyn/get-started/actions#openvault), [DepositCollateral](https://opyn.gitbook.io/opyn/get-started/actions#depositcollateral), and [MintShortOption](https://opyn.gitbook.io/opyn/get-started/actions#mintshortoption) actions to create a short position by opening a vault, supplying collateral and minting options from a vault. 
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
+const USDC = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+const owner = "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c"
+const ETHUSD250Put = "0xde99ea535749f02da84d13e6f8253291e32d3a7f"
+const args = [
+    //Open Vault 
+    {
+        actionType: ActionType.OpenVault,
+        owner: "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c",
+        secondAddress: ZERO_ADDRESS,
+        asset: ZERO_ADDRESS,
+        vaultId: 1, // open the first vault
+        amount: 0,
+        index: 0,
+        data: ZERO_ADDRESS,
+    },
+    
+    //Deposit Collateral 
+    {
+        actionType: ActionType.DepositCollateral,
+        owner: owner,
+        secondAddress: owner,
+        asset: USDC,
+        vaultId: 1, // deposit to the first vault
+        amount: 100 * 1e6, // deposit 100 USDC
+        index: 0,
+        data: ZERO_ADDRESS,
+    }, 
+    
+    //Mint oTokens
+    {
+        actionType: ActionType.MintShortOption,
+        owner: owner,
+        secondAddress: owner,
+        asset: ETHUSD250Put,
+        vaultId: 1, // mint from the first vault
+        amount: 100 * 1e8, // mint 100 oToken
+        index: 0,
+        data: ZERO_ADDRESS,
+    }
+]
+//approve collateral to margin pool
+await ERC20(USDC).approve(marginPool.address, 100 * 1*6)
+await controller.operate(args)
+```
+{% endtab %}
+{% endtabs %}
+
+### Create Spread 
+
+Combines [DepositLongOption](https://opyn.gitbook.io/opyn/get-started/actions#depositlongoption), [DepositCollateral](https://opyn.gitbook.io/opyn/get-started/actions#depositcollateral) \(if needed\), and [MintShortOption](https://opyn.gitbook.io/opyn/get-started/actions#mintshortoption) to create a spread. 
+
+You can learn more about spreads [here](https://opyn.gitbook.io/opyn/#what-is-a-spread). For debit spreads you would not need to deposit collateral beyond the long option, but for credit spreads you would. Below we show a credit spread. 
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
+const USDC = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+const owner = "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c"
+const ETHUSD250Put = "0xde99ea535749f02da84d13e6f8253291e32d3a7f"
+const args = [
+    //Open Vault 
+    {
+        actionType: ActionType.OpenVault,
+        owner: "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c",
+        secondAddress: ZERO_ADDRESS,
+        asset: ZERO_ADDRESS,
+        vaultId: 1, // open the first vault
+        amount: 0,
+        index: 0,
+        data: ZERO_ADDRESS,
+    },
+    
+    //Deposit Long Option
+    {
+        actionType: ActionType.DepositLongOption,
+        owner: owner,
+        secondAddress: owner,
+        asset: ETHUSD200Put,
+        vaultId: 1, // deposit some option to the first vault
+        amount: 100 * 1e8, // deposit 100 oToken
+        index: 0,
+        data: ZERO_ADDRESS,
+    },
+    
+    //Deposit Collateral 
+    {
+        actionType: ActionType.DepositCollateral,
+        owner: owner,
+        secondAddress: owner,
+        asset: USDC,
+        vaultId: 1, // deposit to the first vault
+        amount: 100 * 1e6, // deposit 100 USDC
+        index: 0,
+        data: ZERO_ADDRESS,
+    }, 
+    
+    //Mint oTokens
+    {
+        actionType: ActionType.MintShortOption,
+        owner: owner,
+        secondAddress: owner,
+        asset: ETHUSD250Put,
+        vaultId: 1, // mint from the first vault
+        amount: 100 * 1e8, // mint 100 oToken
+        index: 0,
+        data: ZERO_ADDRESS,
+    }
+]
+// approve oToken collateral to margin pool
+await ERC20(ETHUSD200Put).approve(marginPool.address, 100 * 1*8)
+//approve USDC collateral to margin pool
+await ERC20(USDC).approve(marginPool.address, 100 * 1*6)
+await controller.operate(args)
+```
+{% endtab %}
+{% endtabs %}
+
+### Close Position
+
+In order to close a position, you must buy back oTokens from an exchange if you previously sold your oTokens \([see Trading oTokens](https://opyn.gitbook.io/opyn/get-started/trading-otokens)\), and then you can combine the [BurnShortOption](https://opyn.gitbook.io/opyn/get-started/actions#burnshortoption) and [WithdrawCollateral](https://opyn.gitbook.io/opyn/get-started/actions#withdrawcollateral) actions to burn those oTokens and redeem collateral.
+
+If you are trying to close out a spread, you will also need to call [WithdrawLongOption](https://opyn.gitbook.io/opyn/get-started/actions#withdrawlongoption) to redeem your long option after you've burned oTokens.
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
+const ETHUSD250Put = "0xde99ea535749f02da84d13e6f8253291e32d3a7f"
+const owner = "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c"
+const args = [
+    //Burn Short Option 
+    {
+        actionType: ActionType.BurnShortOption,
+        owner: owner,
+        secondAddress: owner,
+        asset: ETHUSD250Put,
+        vaultId: 1, // burn from the first vault
+        amount: 100 * 1e8, // burn 100 oToken
+        index: 0,
+        data: ZERO_ADDRESS,
+    }, 
+    
+    //Withdraw collateral
+    {
+        actionType: ActionType.WithdrawCollateral,
+        owner: owner,
+        secondAddress: owner, // withdraw to the owner address
+        asset: USDC,
+        vaultId: 1,
+        amount: 100 * 1e6, // withdraw 100 USDC
+        index: 0,
+        data: ZERO_ADDRESS,
+    }
+    
+]
+await controller.operate(args)
+```
+{% endtab %}
+{% endtabs %}
+
+### Permit, Deposit, and Mint
+
+This is an example of combining the [Call](https://opyn.gitbook.io/opyn/get-started/actions#call) action with other actions, in this case the common [DepositCollateral](https://opyn.gitbook.io/opyn/get-started/actions#depositcollateral) and [MintShortOption](https://opyn.gitbook.io/opyn/get-started/actions#mintshortoption) actions required to create a short position. 
+
+The call action facilitates arbitrary calls to whitelisted callees. This uses the [PermitCallee](https://github.com/opynfinance/GammaProtocol/blob/master/contracts/external/callees/PermitCallee.sol) to [let users sign transactions](https://eips.ethereum.org/EIPS/eip-2612) to allow a contract to spend their ERC20 funds vs. having to send an approve transaction. 
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
+const USDC = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+const owner = "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c"
+const ETHUSD250Put = "0xde99ea535749f02da84d13e6f8253291e32d3a7f"
+const signedMessage = await signERC2612Permit(wallet.provider, tokenId, owner, spenderAddress.toString(), value, maxDeadline, nonce);
+const data = ethers.utils.defaultAbiCoder.encode(
+ ['address', 'address', 'address', 'uint256', 'uint256', 'uint8', 'bytes32', 'bytes32'],
+ [tokenId, owner, spenderAddress, value.toString(), maxDeadline, signedMessage.v, signedMessage.r, signedMessage.s],
+)
+const args = [
+    //Permit collateral to margin pool  
+    {
+        actionType: ActionType.Call,
+        owner: owner,
+        secondAddress: ZERO_ADDRESS,
+        asset: ZERO_ADDRESS,
+        vaultId: 0,
+        amount: 0,
+        index: 0,
+        data: data,
+    },
+    
+    //Deposit Collateral 
+    {
+        actionType: ActionType.DepositCollateral,
+        owner: owner,
+        secondAddress: owner,
+        asset: USDC,
+        vaultId: 1, // deposit to the first vault
+        amount: 100 * 1e6, // deposit 100 USDC
+        index: 0,
+        data: ZERO_ADDRESS,
+    }, 
+    
+    //Mint oTokens
+    {
+        actionType: ActionType.MintShortOption,
+        owner: owner,
+        secondAddress: owner,
+        asset: ETHUSD250Put,
+        vaultId: 1, // mint from the first vault
+        amount: 100 * 1e8, // mint 100 oToken
+        index: 0,
+        data: ZERO_ADDRESS,
+    }
+]
+await controller.operate(args)
+```
+{% endtab %}
+{% endtabs %}
 
 
 
