@@ -13,11 +13,11 @@
 
 ## Gamma Protocol <a id="get-started"></a>
 
+* [Taking Actions](get-started/actions.md)
+* [Trading oTokens](get-started/trading-otokens.md)
 * [System Roles & Terms](get-started/protocol-overview-and-glossary-of-terms.md)
 * [Whitelisted Products](get-started/whitelisted-products.md)
 * [Protocol Math](get-started/protocol-math.md)
-* [Taking Actions](get-started/actions.md)
-* [Trading oTokens](get-started/trading-otokens.md)
 
 ## Contracts
 
