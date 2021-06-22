@@ -123,3 +123,9 @@ DEXTF creates structured tokens making use of oTokens in the set of protocols th
 
 * [Site](https://dextf.com/) 
 
+### OpynTradeBot 
+
+[Krugman](https://twitter.com/krugman25) created a twitter bot that live tweets Opyn trades 
+
+* [Twitter Bot](https://twitter.com/OpynTradeBot)
+
