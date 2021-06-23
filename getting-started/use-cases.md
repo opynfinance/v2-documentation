@@ -32,7 +32,7 @@ Allow users to rollover their options from one expiry until the next. For exampl
 
 ### Portfolio Managers <a id="cca3"></a>
 
-With Opyn v2’s new “operator” functionality, users can delegate out portfolio management to dedicated portfolio managers. These managers could be individuals or smart contracts that employ specific strategies.
+With Opyn v2’s new “[operator](https://opyn.gitbook.io/opyn/get-started/protocol-overview-and-glossary-of-terms#operators)” functionality, users can delegate out portfolio management to dedicated portfolio managers. These managers could be individuals or smart contracts that employ specific strategies.
 
 ### Structured Products <a id="fcfe"></a>
 
@@ -40,11 +40,11 @@ You can use options in combination with other financial primitives to build inte
 
 ### Physical Settlement Operator 
 
-Opyn v2 options are cash settled in their collateral asset. However, some users prefer to received the underlying asset if they are exercised. This has been a request especially for put sellers who would prefer to receive ETH rather than USDC cash settlement. You can built an operator takes a put seller's USDC and purchases ETH with it, if exercised. 
+Opyn v2 options are cash settled in their collateral asset. However, some users prefer to received the underlying asset if they are exercised. This has been a request especially for put sellers who would prefer to receive ETH rather than USDC cash settlement. You can build an [operator](https://opyn.gitbook.io/opyn/get-started/protocol-overview-and-glossary-of-terms#operators) that takes a put seller's USDC and purchases ETH with it, if exercised. 
 
 ### Auto Redeem Operator
 
-Currently, Opyn users must return to [Opyn.co](http://opyn.co/) to redeem their collateral after an option expires. Using Opyn's operator function, you can build a smart contract that automatically redeems oTokens for users after expiration. 
+Currently, Opyn users must return to [Opyn.co](http://opyn.co/) to redeem their collateral after an option expires. Using Opyn's [operator](https://opyn.gitbook.io/opyn/get-started/protocol-overview-and-glossary-of-terms#operators) function, you can build a smart contract that automatically redeems oTokens for users after expiration. 
 
 ### OTC oTokens Interface <a id="fafd"></a>
 

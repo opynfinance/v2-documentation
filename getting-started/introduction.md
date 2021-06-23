@@ -49,7 +49,7 @@ For example if you think ETH isn't going to move too much, you could sell a cove
 
 Opyn V2 \(Gamma Protocol\), allows anyone to buy, sell, and create options on any ERC20 asset. 
 
-Gamma Protocol is the most capital efficient options protocol allowing for: 
+Gamma Protocol is the most capital efficient and flexible options protocol allowing for: 
 
 * [Partially collateralized](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) options 
 * [Spreads](https://opyn.gitbook.io/opyn/#what-is-a-spread) 

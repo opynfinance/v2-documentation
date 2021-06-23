@@ -409,7 +409,7 @@ await controller.operate(args)
 
 ## Combining Actions
 
-The **operate** function in Controller contract takes in an array of actions. This allows you to combine actions! We'll outline some common combinations here. 
+The [`operate`](https://github.com/opynfinance/GammaProtocol/blob/386386bac50e24816931190a243e1f220d043c29/contracts/core/Controller.sol#L411) function in Controller contract takes in an array of actions. This allows you to combine actions! We'll outline some common combinations here. 
 
 #### Constraints
 

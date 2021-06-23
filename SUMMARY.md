@@ -19,6 +19,10 @@
 * [Whitelisted Products](get-started/whitelisted-products.md)
 * [Protocol Math](get-started/protocol-math.md)
 
+## Subgraph
+
+* [Common Subgraph Queries](subgraph/subgraph.md)
+
 ## Contracts
 
 * [Contract Architecture](contracts/contract-architecture.md)
@@ -31,10 +35,6 @@
 * [Oracle](contracts/oracle.md)
 * [MarginPool](contracts/marginpool.md)
 * [MarginVault](contracts/marginvault.md)
-
-## Subgraph
-
-* [Common Subgraph Queries](subgraph/subgraph.md)
 
 ---
 
