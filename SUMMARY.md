@@ -11,6 +11,12 @@
 * [Smart Contract Addresses](getting-started/abis-smart-contract-addresses.md)
 * [Grants Program](https://www.notion.so/opynopyn/Opyn-Ecosystem-Grants-627f298f1eec49c1914172b929a03932)
 
+## Featured Applications
+
+* [Perpetual Vault Strategies](https://opyn.gitbook.io/perp-vault/)
+* [Liquidator Bot](https://opyn.gitbook.io/opyn/getting-started/use-cases#liquidator-bot)
+* [Vesting Call Options](https://opyn.gitbook.io/opyn/getting-started/use-cases#vesting-call-options-interface)
+
 ## Gamma Protocol <a id="get-started"></a>
 
 * [Taking Actions](get-started/actions.md)

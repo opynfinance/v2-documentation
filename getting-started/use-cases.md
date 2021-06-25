@@ -16,15 +16,18 @@ Uniswap LPs can help reduce impermanent loss in ETH:Stablecoin pools using [stra
 
 ### Liquidation Saver 
 
-With the [partial collateralization update](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d), users who choose to partially collateralize positions are at risk of liquidation. Say 10 ETH is required to fully collateralize a position and 4 ETH to partially collateralize. You could create a smart contract into which a user deposits the 10 ETH, where 4 ETH go to collateralizing the options position and the other 6 ETH earn interest \(eg. in Yearn\). If the option position gets close to undercollateralization, the contract can pull some ETH from Yearn to top up the option collateral. 
+With the [partial collateralization update](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d), users who choose to partially collateralize positions are at risk of liquidation. Say 10 ETH is required to fully collateralize a position and 4 ETH to partially collateralize. You could create a smart contract into which a user deposits the 10 ETH, where 4 ETH go to collateralizing the options position and the other 6 ETH earn interest \(eg. in Yearn\). If the option position gets close to undercollateralization, the contract can pull some ETH from Yearn to top up the option collateral. You can [view this doc to see how liquidations work](https://www.notion.so/opynopyn/Gamma-Protocol-Liquidations-1ffd204e403245199a433b98c5cc613b).
 
 ### Liquidator Bot 
 
 The  [partial collateralization update](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) includes liquidations, so you can build a liquidator bot to liquidate undercollateralized positions.
 
+* [How liquidations work](https://www.notion.so/opynopyn/Gamma-Protocol-Liquidations-1ffd204e403245199a433b98c5cc613b)
+* [Reference Liquidator Bot Implementation](https://github.com/opynfinance/Gamma-Liquidator)
+
 ### Liquidation Interface 
 
-The  [partial collateralization update](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) includes liquidations, so you can build an interface that allows anyone to liquidate positions, even if they haven't built a liquidator bot. 
+The  [partial collateralization update](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) includes liquidations, so you can build an interface that allows anyone to liquidate positions, even if they haven't built a liquidator bot. You can [view this doc to see how liquidations work](https://www.notion.so/opynopyn/Gamma-Protocol-Liquidations-1ffd204e403245199a433b98c5cc613b).
 
 ### Rollovers <a id="42fa"></a>
 
@@ -36,7 +39,7 @@ With Opyn v2’s new “[operator](https://opyn.gitbook.io/opyn/get-started/prot
 
 ### Structured Products <a id="fcfe"></a>
 
-You can use options in combination with other financial primitives to build interesting [structured products](https://www.investopedia.com/articles/optioninvestor/07/structured_products.asp). For example, you could create a[ principal protected note](https://www.investopedia.com/terms/p/principalprotectednote.asp), where you attach a call or put option to an ERC-20. One way this could work to go to a money market \(eg. Compound, Aave\), look at the fixed rate lending rates, and deposit an amount \(say 0.99 USDC\) that yields 1 USDC at expiry. Then you could use the remaining 0.01 USDC to buy a call option. The user’s upside exposure would be based on the 0.01 and the price of a call option. Another strategy could be [the wheel](https://seekingalpha.com/instablog/1046492-markus-heitkoetter/5514813-wheel-option-strategy-example), where you sell puts to collect premium, and if the puts are exercised, sell calls. 
+You can use options in combination with other financial primitives to build interesting [structured products](https://www.investopedia.com/articles/optioninvestor/07/structured_products.asp). For example, you could create a[ principal protected note](https://www.investopedia.com/terms/p/principalprotectednote.asp), where you attach a call or put option to an ERC-20. One way this could work to go to a money market \(eg. Compound, Aave\), look at the fixed rate lending rates, and deposit an amount \(say 0.99 USDC\) that yields 1 USDC at expiry. Then you could use the remaining 0.01 USDC to buy a call option. The user’s upside exposure would be based on the 0.01 and the price of a call option. Another strategy could be [the wheel](https://seekingalpha.com/instablog/1046492-markus-heitkoetter/5514813-wheel-option-strategy-example), where you sell puts to collect premium, and if the puts are exercised, sell calls. There is a set of [developer templates](https://opyn.gitbook.io/perp-vault/) available to get started with building these kinds of products.
 
 ### Physical Settlement Operator 
 
@@ -77,6 +80,10 @@ You could create a python / js / rust library to interact with Gamma Protocol. T
 ### **Volatility Oracle** <a id="e6bb"></a>
 
 Using put and call options you can develop a volatility oracle like the [VIX](https://www.investopedia.com/ask/answers/021015/what-cboe-volatility-index-vix.asp), which tracks volatility in traditional finance.
+
+### Vesting Call Options Interface
+
+Create and interface of people to deploy vesting call options, similar to equity options that startups typically use to incentivize employees.This allows DAOs to grant vesting options to any contributor. [Opyn V1 physically settled options](https://opyn.gitbook.io/opynv1/) work better for this use case. [Here are instructions](https://gist.github.com/alexisgauba/cf055f521bcfded018116f3f37074f67) on how to set this up using Etherscan, but an interface would make this much easier and more accessible to projects.
 
 ## Existing Projects 
 
