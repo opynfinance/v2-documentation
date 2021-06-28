@@ -37,36 +37,6 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | WBTC Pricer | [0x5faca6df39c897802d752dfcb8c02ea6959245fc](https://etherscan.io/address/0x5faca6df39c897802d752dfcb8c02ea6959245fc#readContract) | - |
 | Permit Callee | [0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b](https://etherscan.io/address/0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b#code) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b) |
 
-## Ropsten 
-
-_If you need to trade oTokens using 0x, we recommend using Ropsten, since that is the only testnet 0x supports._ 
-
-_Note that Chainlink \(our oracle source\) doesn't support Ropsten, so if you need a historical price for a specific oToken, please reach out to us on_ [_Discord_](https://discord.com/invite/2NFdXaE)_._
-
-🚰[**Testnet Faucet**](https://gammaportal.xyz/#/protocol/faucet/)
-
-#### Core Modules
-
-| Module | Address | ABI |
-| :--- | :--- | :--- |
-| AddressBook | [0xE71417EEfC794C9B83Fc494861981721e26db0E9](https://ropsten.etherscan.io/address/0xE71417EEfC794C9B83Fc494861981721e26db0E9) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xE71417EEfC794C9B83Fc494861981721e26db0E9) |
-| OtokenFactory |  [0x8d6994b701F480C27757c5FE2bd93d5352160081](https://ropsten.etherscan.io/address/0x8d6994b701f480c27757c5fe2bd93d5352160081) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x8d6994b701f480c27757c5fe2bd93d5352160081) |
-| Otoken | [0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3](https://ropsten.etherscan.io/address/0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3) |
-| Whitelist | [0x5faCA6DF39c897802d752DfCb8c02Ea6959245Fc](https://ropsten.etherscan.io/address/0x5faCA6DF39c897802d752DfCb8c02Ea6959245Fc) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3) |
-| Oracle | [0x55a50C75c7f82943DC4755B2964f4F3F6aB5d5AF](https://ropsten.etherscan.io/address/0x55a50C75c7f82943DC4755B2964f4F3F6aB5d5AF) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x55a50C75c7f82943DC4755B2964f4F3F6aB5d5AF) |
-| MarginPool |  [0x3C325EeBB64495665F5376930d30151C1075bFD8](https://ropsten.etherscan.io/address/0x3C325EeBB64495665F5376930d30151C1075bFD8) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x3C325EeBB64495665F5376930d30151C1075bFD8) |
-| MarginCalculator |  [0x48DAd1a9e38Ff941429F1542e1Cf552e647306bB](https://ropsten.etherscan.io/address/0x48DAd1a9e38Ff941429F1542e1Cf552e647306bB) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x48DAd1a9e38Ff941429F1542e1Cf552e647306bB) |
-| Controller proxy | [0x7e9beaccdccee88558aaa2dc121e52ec6226864e](https://ropsten.etherscan.io/address/0x7e9beaccdccee88558aaa2dc121e52ec6226864e) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xd37752fd2976335fddb2e6a2cf5ffbfa88bf5f05) |
-| Payable Proxy \(operator\) | [0x0Da6280D0837292B7A1f27FC602C7e0bD3ce0b66](https://ropsten.etherscan.io/address/0x0Da6280D0837292B7A1f27FC602C7e0bD3ce0b66) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) |
-
-#### External Contract and Pricers
-
-| Contract | Address | ABI |
-| :--- | :--- | :--- |
-| USDC | [0x27415c30d8c87437BeCbd4f98474f26E712047f4](https://ropsten.etherscan.io/address/0x27415c30d8c87437BeCbd4f98474f26E712047f4) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x27415c30d8c87437BeCbd4f98474f26E712047f4) |
-| WETH | [0xc778417e063141139fce010982780140aa0cd5ab](https://ropsten.etherscan.io/token/0xc778417e063141139fce010982780140aa0cd5ab) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xc778417e063141139fce010982780140aa0cd5ab) |
-| WBTC | [0xe477d1FFC1e5eA6a577846a4699617997315B4ee](https://ropsten.etherscan.io/address/0xe477d1FFC1e5eA6a577846a4699617997315B4ee) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xe477d1FFC1e5eA6a577846a4699617997315B4ee) |
-
 ## Kovan
 
 _Note that 0x is deprecated on Kovan, so our kovan testnet won't allow creating, buying, or selling orders. We recommend testing with Ropsten if you need 0x functionality._ 
@@ -99,5 +69,37 @@ _If you don't need 0x functionality, Kovan is a better choice, since Chainlink \
 | WETH Pricer | [0xa2245d50B7DD93b93E829818CdA258e5e92d9608](https://kovan.etherscan.io/address/0xa2245d50B7DD93b93E829818CdA258e5e92d9608) | - |
 | WBTC Pricer | [0xc68819b082b8BC7BB5e3fDF7b58F821421f9c480](https://kovan.etherscan.io/address/0xc68819b082b8BC7BB5e3fDF7b58F821421f9c480) | - |
 
+## Ropsten 
 
+_If you need to trade oTokens using 0x, we recommend using Ropsten, since that is the only testnet 0x supports._ 
+
+_Note that Chainlink \(our oracle source\) doesn't support Ropsten, so if you need a historical price for a specific oToken, please reach out to us on_ [_Discord_](https://discord.com/invite/2NFdXaE)_._
+
+_Also note that the Ropsten release currently doesn't have partial collateralization as it is not yet updated to the_ [_v2.0.0 release_](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)_. It will be updated in the coming weeks._ 
+
+🚰[**Testnet Faucet**](https://gammaportal.xyz/#/protocol/faucet/)
+
+#### Core Modules
+
+| Module | Address | ABI |
+| :--- | :--- | :--- |
+| AddressBook | [0xE71417EEfC794C9B83Fc494861981721e26db0E9](https://ropsten.etherscan.io/address/0xE71417EEfC794C9B83Fc494861981721e26db0E9) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xE71417EEfC794C9B83Fc494861981721e26db0E9) |
+| OtokenFactory |  [0x8d6994b701F480C27757c5FE2bd93d5352160081](https://ropsten.etherscan.io/address/0x8d6994b701f480c27757c5fe2bd93d5352160081) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x8d6994b701f480c27757c5fe2bd93d5352160081) |
+| Otoken | [0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3](https://ropsten.etherscan.io/address/0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3) |
+| Whitelist | [0x5faCA6DF39c897802d752DfCb8c02Ea6959245Fc](https://ropsten.etherscan.io/address/0x5faCA6DF39c897802d752DfCb8c02Ea6959245Fc) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x2E03749e6eA3Cb3E5bddf22975d93f2F081c9aE3) |
+| Oracle | [0x55a50C75c7f82943DC4755B2964f4F3F6aB5d5AF](https://ropsten.etherscan.io/address/0x55a50C75c7f82943DC4755B2964f4F3F6aB5d5AF) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x55a50C75c7f82943DC4755B2964f4F3F6aB5d5AF) |
+| MarginPool |  [0x3C325EeBB64495665F5376930d30151C1075bFD8](https://ropsten.etherscan.io/address/0x3C325EeBB64495665F5376930d30151C1075bFD8) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x3C325EeBB64495665F5376930d30151C1075bFD8) |
+| MarginCalculator |  [0x48DAd1a9e38Ff941429F1542e1Cf552e647306bB](https://ropsten.etherscan.io/address/0x48DAd1a9e38Ff941429F1542e1Cf552e647306bB) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x48DAd1a9e38Ff941429F1542e1Cf552e647306bB) |
+| Controller proxy | [0x7e9beaccdccee88558aaa2dc121e52ec6226864e](https://ropsten.etherscan.io/address/0x7e9beaccdccee88558aaa2dc121e52ec6226864e) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xd37752fd2976335fddb2e6a2cf5ffbfa88bf5f05) |
+| Payable Proxy \(operator\) | [0x0Da6280D0837292B7A1f27FC602C7e0bD3ce0b66](https://ropsten.etherscan.io/address/0x0Da6280D0837292B7A1f27FC602C7e0bD3ce0b66) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) |
+
+#### External Contract and Pricers
+
+| Contract | Address | ABI |
+| :--- | :--- | :--- |
+| USDC | [0x27415c30d8c87437BeCbd4f98474f26E712047f4](https://ropsten.etherscan.io/address/0x27415c30d8c87437BeCbd4f98474f26E712047f4) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0x27415c30d8c87437BeCbd4f98474f26E712047f4) |
+| WETH | [0xc778417e063141139fce010982780140aa0cd5ab](https://ropsten.etherscan.io/token/0xc778417e063141139fce010982780140aa0cd5ab) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xc778417e063141139fce010982780140aa0cd5ab) |
+| WBTC | [0xe477d1FFC1e5eA6a577846a4699617997315B4ee](https://ropsten.etherscan.io/address/0xe477d1FFC1e5eA6a577846a4699617997315B4ee) | [ABI](https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xe477d1FFC1e5eA6a577846a4699617997315B4ee) |
+
+## 
 
