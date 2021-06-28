@@ -20,11 +20,10 @@ Security is one of our highest priorities, and while Opyn's smart contracts have
 
 ### **Scope**
 
-This program is limited to the vulnerabilities affecting the [Gamma Protocol](https://github.com/opynfinance/GammaProtocol/tree/master/contracts). Submissions should be based off this [commit hash](https://github.com/opynfinance/GammaProtocol/tree/752c5c336f28459a9d5ae14cae123e8e47b7b02f) \(752c5c336f28459a9d5ae14cae123e8e47b7b02f\).
+This program is limited to the vulnerabilities affecting the [Gamma Protocol](https://github.com/opynfinance/GammaProtocol/tree/master/contracts). Submissions should be based off this [commit hash ](https://github.com/opynfinance/GammaProtocol/tree/67a2bff57ec49c4bb7c9c454c8ad945fd5bdcf51)\(67a2bff57ec49c4bb7c9c454c8ad945fd5bdcf51\).
 
 The following ineligible findings are not in the scope of the program:
 
-* Bugs in [Callee Contracts](https://github.com/opynfinance/GammaProtocol/tree/master/contracts/external/callees) in the Gamma Protocol repo 
 * Bugs in any third party contract or platform that interacts with Gamma
 * Vulnerabilities contingent upon the occurrence of any of the following activities also are outside the scope of this Program:
   * Front end bugs
