@@ -6,6 +6,10 @@ description: >-
 
 # Smart Contract Addresses
 
+{% hint style="info" %}
+Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)
+{% endhint %}
+
 ## Mainnet
 
 #### Core Modules

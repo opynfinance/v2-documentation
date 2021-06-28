@@ -1,14 +1,55 @@
 # MarginPool
 
-### **Overview**
+## **Overview**
 
 **MarginPool** is the contract that moves and stores all the ERC20 tokens. Users only need to approve an asset to be used by MarginPool once, then the asset can be used to create multiple different options.
 
 To prevent money getting stuck in the pool due to accidental transfers to the pool, \(or by airdrop like UNI\), there’s a farmer role that has the privilege to distribute these excess tokens. Whenever a transfer is done by the controller, we will modify the assetBalance variable in the contract, and the farmer can take out the amount between actual balance and assetBalance.
 
-### Functions
+### Modifiers:
 
-#### `transferToPool(address _asset, address _user, uint256 _amount)`
+* `onlyController()`
+* `onlyFarmer()`
+
+### Functions:
+
+* `constructor(address _addressBook) (public)`
+* `transferToPool(address _asset, address _user, uint256 _amount) (public)`
+* `transferToUser(address _asset, address _user, uint256 _amount) (public)`
+* `getStoredBalance(address _asset) (external)`
+* `batchTransferToPool(address[] _asset, address[] _user, uint256[] _amount) (external)`
+* `batchTransferToUser(address[] _asset, address[] _user, uint256[] _amount) (external)`
+* `farm(address _asset, address _receiver, uint256 _amount) (external)`
+* `setFarmer(address _farmer) (external)`
+
+### Events:
+
+* `TransferToPool(address asset, address user, uint256 amount)`
+* `TransferToUser(address asset, address user, uint256 amount)`
+* `FarmerUpdated(address oldAddress, address newAddress)`
+* `AssetFarmed(address asset, address receiver, uint256 amount)`
+
+## Modifiers 
+
+### Modifier `onlyController()`
+
+check if the sender is the Controller module
+
+### Modifier `onlyFarmer()`
+
+check if the sender is the farmer address
+
+## Functions
+
+### Function `constructor(address _addressBook) public`
+
+contructor
+
+**Parameters:**
+
+* `_addressBook`: AddressBook module
+
+### Function `transferToPool(address _asset, address _user, uint256 _amount) public`
 
 transfers an asset from a user to the pool
 
@@ -18,7 +59,7 @@ transfers an asset from a user to the pool
 * `_user`: address of the user to transfer assets from
 * `_amount`: amount of the token to transfer from \_user
 
-#### `transferToUser(address _asset, address _user, uint256 _amount)`
+### Function `transferToUser(address _asset, address _user, uint256 _amount) public`
 
 transfers an asset from the pool to a user
 
@@ -28,7 +69,7 @@ transfers an asset from the pool to a user
 * `_user`: address of the user to transfer assets to
 * `_amount`: amount of the token to transfer to \_user
 
-#### `getStoredBalance(address _asset) → uint256`
+### Function `getStoredBalance(address _asset) → uint256 external`
 
 get the stored balance of an asset
 
@@ -40,7 +81,7 @@ get the stored balance of an asset
 
 * asset balance
 
-#### `batchTransferToPool(address[] _asset, address[] _user, uint256[] _amount)` 
+### Function `batchTransferToPool(address[] _asset, address[] _user, uint256[] _amount) external`
 
 transfers multiple assets from users to the pool
 
@@ -50,7 +91,7 @@ transfers multiple assets from users to the pool
 * `_user`: addresses of the users to transfer assets to
 * `_amount`: amount of each token to transfer to pool
 
-#### `batchTransferToUser(address[] _asset, address[] _user, uint256[] _amount)` 
+### Function `batchTransferToUser(address[] _asset, address[] _user, uint256[] _amount) external`
 
 transfers multiple assets from the pool to users
 
@@ -60,11 +101,11 @@ transfers multiple assets from the pool to users
 * `_user`: addresses of the users to transfer assets to
 * `_amount`: amount of each token to transfer to \_user
 
-#### `farm(address _asset, address _receiver, uint256 _amount)` 
+### Function `farm(address _asset, address _receiver, uint256 _amount) external`
 
 function to collect the excess balance of a particular asset
 
-can only be called by the farmer address
+can only be called by the farmer address. Do not farm otokens.
 
 **Parameters:**
 
@@ -72,21 +113,31 @@ can only be called by the farmer address
 * `_receiver`: receiver address
 * `_amount`: amount to remove from pool
 
-#### `setFarmer(address _farmer)` 
+### Function `setFarmer(address _farmer) external`
 
-function to set farmer address. Can only be called by MarginPool owner
+function to set farmer address
+
+can only be called by MarginPool owner
 
 **Parameters:**
 
 * `_farmer`: farmer address
 
-### Events
+## Events
 
-#### `FarmerUpdated(address oldAddress, address newAddress)`
+### Event `TransferToPool(address asset, address user, uint256 amount)`
+
+emits an event when marginpool receive funds from controller
+
+### Event `TransferToUser(address asset, address user, uint256 amount)`
+
+emits an event when marginpool transfer funds to controller
+
+### Event `FarmerUpdated(address oldAddress, address newAddress)`
 
 emit event after updating the farmer address
 
-#### `AssetFarmed(address asset, address receiver, uint256 _amount)`
+### Event `AssetFarmed(address asset, address receiver, uint256 amount)`
 
 emit event when an asset gets harvested from the pool
 

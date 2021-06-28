@@ -60,6 +60,7 @@ enum ActionType {
     WithdrawCollateral,
     SettleVault,
     Redeem,
+    Liquidate, 
     Call
 }
 ```
@@ -357,6 +358,48 @@ const args = [{
     data: ZERO_ADDRESS,
 }]
 await ERC20(ETHUSD250Put).approve(marginPool.address, 1*8)
+await controller.operate(args)
+```
+{% endtab %}
+{% endtabs %}
+
+### Liquidate 
+
+Liquidate a vault in the danger zone by bringing oTokens \(either by buying or minting\) and redeeming collateral. This is a great use case for [flash-minting](https://opyn.gitbook.io/opyn/#what-is-a-flash-mint). You can view this blog for a [high level overview](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) of liquidations and this doc for [more specifics](https://www.notion.so/opynopyn/Gamma-Protocol-Liquidations-1ffd204e403245199a433b98c5cc613b). 
+
+To find out if a vault is in the danger zone, you can call `isLiquidatable()` in the [Controller](https://opyn.gitbook.io/opyn/getting-started/abis-smart-contract-addresses), passing in the vault owner, vault id, and the pricer round id. 
+
+* If the vault is not liquidatable it will return false, 0, 0 
+* If the vault is liquidatable it will return true, amount of USDC to repay 1 oToken, USDC dust amount 
+  * The dust amount is the minimum amount that must remain 
+
+You can find the pricer roundId by calling `latestRoundData()` from the [Chainlink price feed](https://docs.chain.link/docs/get-the-latest-price/). 
+
+#### Required Fields:
+
+* `owner:` the address of the vault owner to liquidate
+* `secondAddress`: the liquidator address
+* `vaultId`: the vault to liquidate 
+* `amount`: the amount of oToken to pay back 
+* `data`: the roundId to liquidate with, encoded
+
+{% tabs %}
+{% tab title="JavaScript" %}
+```javascript
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
+const vaultOwner = "0xcc5d905b9c2c8c9329eb4e25dc086369d6c7777c"
+const liquidator = "0xC257274276a4E539741Ca11b590B9447B26A8051"
+const roundId = "0x0000000000000000000000000000000000000000000000000000000000000003"
+const args = [{
+    actionType: ActionType.Liquidate,
+    owner: vaultOwner,
+    secondAddress: liquidator,
+    asset: ZERO_ADDRESS,
+    vaultId: 0, // liquidate vault 0 
+    amount: 1e8, // liquidate 1 oToken
+    index: 0,
+    data: roundId,
+}]
 await controller.operate(args)
 ```
 {% endtab %}
