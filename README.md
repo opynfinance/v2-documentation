@@ -14,6 +14,7 @@ Here are some resources to learn more about options:
 * [Khan Academy](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities)
 * [OptionAlpha](https://optionalpha.com/members/video-tutorials/options-basics)
 * [Investopedia](https://www.investopedia.com/options-basics-tutorial-4583012)
+* [Beginner's Guide to DeFi Options](https://medium.com/opyn/a-beginners-guide-to-defi-options-opyn-v2-4d64f91acc84)
 
 There are also lots of great conversations on our [discord](https://tiny.cc/opyndiscord), and we’re happy to answer any questions :\)
 
@@ -70,6 +71,14 @@ Some hardware wallets don't support permit signatures. In order to use a normal 
 
 ![](.gitbook/assets/screen-shot-2021-06-18-at-11.44.49-pm.png)
 
+### Do you have any tutorials on how to use the platform? 
+
+Yes! You can check them out here: 
+
+* [Opyn v2 Tutorial](https://medium.com/opyn/how-to-trade-defi-options-opyn-v2-tutorial-aabc0a323430)
+* [Limit Order Tutorial ](https://medium.com/opyn/opyn-v2-limit-order-tutorial-10efe115ac50)
+* Partial Collateralization Tutorial \(coming soon!\) 
+
 ## Limit Orders 
 
 ### How do limit orders work? 
@@ -106,7 +115,7 @@ Yes, anyone can create new oTokens if a product has been whitelisted. A product 
 
 Opyn v2 allows you to create put and call options with spreads for capital efficiency, and is great for applications ranging from protection and hedging to taking views on different cryptocurrencies. Options are an incredibly versatile financial instrument - in fact you can create [any financial payoff using just put and call options.](https://www.youtube.com/watch?v=rMsu4v-UlkA&feature=youtu.be&ab_channel=MITOpenCourseWare)
 
-[Here's a list of some ideas](https://medium.com/opyn/buidling-with-options-otokens-in-defi-pt-2-f561eb67f4af) you can build with Gamma!
+Check out [these use cases](https://opyn.gitbook.io/opyn/getting-started/use-cases) to learn more about what you can build, and [jump into Discord - we'd love to jam on \#dev](https://tiny.cc/opyndiscord)! 
 
 ### Where can I get help?
 
@@ -154,6 +163,37 @@ All of these actions have to be done atomically, within a single transaction. Co
 Operators are a smart contract feature that allow users to delegate control of their vaults to a third party smart contract. This could be a smart contract that rolls over their options for them, a fund manager to do trades for them, or a vast possibility of other interactions that developers can build on top of the protocol.
 
 Operators have full control over user funds and can take any action on behalf of a user. The only action operators cannot take is to add new operators or remove new operators.
+
+## Partial Collateralization and Liquidations 
+
+### How does partial collateralization work? 
+
+Users can now choose if they want to fully collateralize or partially collateralize a minted option. If a user chooses to partially collateralize their trade:
+
+* For calls, less than 1 underlying asset can be posted as collateral
+* For puts, less than strike can be posted as collateral
+
+With partial collateralization, excess capital is now free to either standby risk free or be deployed in another trade.
+
+Benefits of Partial Collateralization
+
+* Increased upside leverage
+* Enhanced capital efficiency 
+* More portfolio flexibility 
+
+Risks Associated with Partial Collateralization
+
+* Greater downside leverage
+* Under-collateralized positions will lead to forced liquidations
+* Possible to lose 100% of original investment prior to expiration 
+
+Margin is calculated using only a spot price, a shock to spot parameter, a conservative assumption on vol/premium, and time to expiry to give a worst case bound on the option premium. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more. 
+
+### How do liquidations work? 
+
+Sellers must maintain a minimum amount of collateral in their vault to secure the options they have sold. If a seller fails to do so, their vault may be liquidated and their collateral will be seized and auctioned off to repay their debts. The liquidation mechanism is a reverse dutch auction that is triggered via a Chainlink pricer with a specific timestamp.
+
+The reverse dutch auction serves as the price discovery mechanism for Opyn liquidations.The reverse dutch auction starts at a low price and then the price increases over time - liquidators will execute the trade when it is profitable. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more. 
 
 ## Opyn v1
 
