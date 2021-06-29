@@ -195,6 +195,10 @@ Sellers must maintain a minimum amount of collateral in their vault to secure th
 
 The reverse dutch auction serves as the price discovery mechanism for Opyn liquidations.The reverse dutch auction starts at a low price and then the price increases over time - liquidators will execute the trade when it is profitable. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more. 
 
+### Why is there a minimum size required for partially collateralized positions? 
+
+In order to ensure the safety of the system and make sure liquidators and incentivized to liquidate vaults even in high gas environments, we must have a minimum size required to create a partially collateralized vault. This is similar to MakerDAO's dust, which is the minimum requirement for opening a Maker vault to mint DAI. The current minimums are 1 ETH for selling call options and 2500 USDC for selling put options.
+
 ## Opyn v1
 
 ### What is happening to Opyn v1?
