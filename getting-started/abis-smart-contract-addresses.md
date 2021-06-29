@@ -20,9 +20,9 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | OtokenFactory | [0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E](https://etherscan.io/address/0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E) |
 | Otoken | [0x7C91794b65eB573c3702229009AcD3CDe712146D](https://etherscan.io/address/0x7C91794b65eB573c3702229009AcD3CDe712146D) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x7C91794b65eB573c3702229009AcD3CDe712146D) |
 | Whitelist | [0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779](https://etherscan.io/address/0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779) |
-| Oracle | [0xc497f40D1B7db6FA5017373f1a0Ec6d53126Da23](https://etherscan.io/address/0xc497f40D1B7db6FA5017373f1a0Ec6d53126Da23) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xc497f40D1B7db6FA5017373f1a0Ec6d53126Da23) |
+| Oracle | [0x789cD7AB3742e23Ce0952F6Bc3Eb3A73A0E08833](https://etherscan.io/address/0x789cD7AB3742e23Ce0952F6Bc3Eb3A73A0E08833) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xc497f40D1B7db6FA5017373f1a0Ec6d53126Da23) |
 | MarginPool | [0x5934807cC0654d46755eBd2848840b616256C6Ef](https://etherscan.io/address/0x5934807cC0654d46755eBd2848840b616256C6Ef) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x5934807cC0654d46755eBd2848840b616256C6Ef) |
-| MarginCalculator | [0x7A48d10f372b3D7c60f6c9770B91398e4ccfd3C7](https://etherscan.io/address/0x7A48d10f372b3D7c60f6c9770B91398e4ccfd3C7) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x7A48d10f372b3D7c60f6c9770B91398e4ccfd3C7) |
+| MarginCalculator | [0xfaa67e3736572645B38AF7410B3E1006708e13F4](https://etherscan.io/address/0xfaa67e3736572645B38AF7410B3E1006708e13F4) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x7A48d10f372b3D7c60f6c9770B91398e4ccfd3C7) |
 | Controller proxy | [0x4ccc2339F87F6c59c6893E1A678c2266cA58dC72](https://etherscan.io/address/0x4ccc2339F87F6c59c6893E1A678c2266cA58dC72) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xae1e3ac020ddec3d20c8da5532002fdac62e9f86) |
 | Payable Proxy \(operator\) | [0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC](https://etherscan.io/address/0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) |
 
@@ -33,8 +33,8 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | USDC | [0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf) |
 | WETH | [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
 | WBTC | [0x2260fac5e5542a773aa44fbcfedf7c193bc2c599](https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
-| WETH Pricer | [0x4fb83a2e169c9bca5504709ccf97679822f1469f](https://etherscan.io/address/0x4fb83a2e169c9bca5504709ccf97679822f1469f) | - |
-| WBTC Pricer | [0x5faca6df39c897802d752dfcb8c02ea6959245fc](https://etherscan.io/address/0x5faca6df39c897802d752dfcb8c02ea6959245fc#readContract) | - |
+| WETH Pricer | [0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C](https://etherscan.io/address/0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C) | - |
+| WBTC Pricer | [0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d](https://etherscan.io/address/0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d) | - |
 | Permit Callee | [0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b](https://etherscan.io/address/0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b#code) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b) |
 
 ## Kovan

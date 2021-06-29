@@ -4,10 +4,11 @@
 
 **Oracle** is the oracle contract for the whole v2 system, [MarginCalculator](margincalculator.md) will constantly read token price from oracle to determine if a vault is properly collateralized. 
 
-The oracle has 2 jobs: 
+The oracle has 3 jobs: 
 
 1. Return real time price for an asset.
-2. Return stored price for an asset at specific timestamp.
+2. Return stored price for an asset at specific timestamp \(for settlement\).
+3. Route request to Chainlink aggregator to get price at specific timestamp, this is only used for liquidation feature. 
 
 The pricer roles are defined for each asset type. A Pricer is an interface that Oracle can just query and get the live Price, and also responsible for submitting the price for a specific timestamp to Oracle.  
 

@@ -88,22 +88,7 @@ return the exact address that will be deployed at with \_computeAddress
 
 * targetAddress the address this oToken would be deployed at
 
-### Function `_getOptionId(address _underlyingAsset, address _strikeAsset, address _collateralAsset, uint256 _strikePrice, uint256 _expiry, bool _isPut) → bytes32 internal`
-
-hash oToken parameters and return a unique option id
-
-**Parameters:**
-
-* `_underlyingAsset`: asset that the option references
-* `_strikeAsset`: asset that the strike price is denominated in
-* `_collateralAsset`: asset that is held as collateral against short/written options
-* `_strikePrice`: strike price with decimals = 18
-* `_expiry`: expiration timestamp as a unix timestamp
-* `_isPut`: True if a put option, False if a call option
-
-**Return Values:**
-
-* id the unique id of an oToken
+### 
 
 ## Events
 
