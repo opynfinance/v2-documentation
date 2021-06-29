@@ -197,7 +197,7 @@ The reverse dutch auction serves as the price discovery mechanism for Opyn liqui
 
 ### Why is there a minimum size required for partially collateralized positions? 
 
-In order to ensure the safety of the system and make sure liquidators and incentivized to liquidate vaults even in high gas environments, we must have a minimum size required to create a partially collateralized vault. This is similar to MakerDAO's dust, which is the minimum requirement for opening a Maker vault to mint DAI. The current minimums are 1 ETH for selling call options and 2500 USDC for selling put options.
+In order to ensure the safety of the system and make sure liquidators are incentivized to liquidate vaults even in high gas environments, we must have a minimum size required to create a partially collateralized vault. This is similar to MakerDAO's dust, which is the minimum requirement for opening a Maker vault to mint DAI. The current minimums are 1 ETH for selling call options and 2500 USDC for selling put options.
 
 ## Opyn v1
 
