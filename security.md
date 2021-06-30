@@ -6,13 +6,15 @@ We encourage our users to be mindful of risk and only use funds they can afford 
 
 ## Audits
 
-Opyn's smart contracts have been audited by OpenZeppelin and Peckshield, and formally verified by Certora. 
+Opyn's smart contracts have been audited by Trail of Bits, OpenZeppelin and Peckshield, and formally verified by Certora. 
 
-\*\*\*\*[**Certora Formal Verification Report**](https://www.certora.com/pubs/OpynGammaDec2020.pdf)
+\*\*\*\*[**Trail of Bits Audit Report - May 2021**](https://github.com/trailofbits/publications/blob/master/reviews/Opyn-Gamma-Protocol.pdf)\*\*\*\*
 
-\*\*\*\*[**OpenZeppelin Audit Report** ](https://blog.openzeppelin.com/opyn-gamma-protocol-audit/)
+\*\*\*\*[**Peckshield Audit Report - Feb 2021**](https://github.com/peckshield/publications/blob/master/audit_reports/peckshield-audit-report-Opyn-v1.0.pdf)\*\*\*\*
 
-\*\*\*\*[**Peckshield Audit Report**](https://github.com/peckshield/publications/blob/master/audit_reports/peckshield-audit-report-Opyn-v1.0.pdf)
+\*\*\*\*[**Certora Formal Verification Report - Dec 2020**](https://www.certora.com/pubs/OpynGammaDec2020.pdf)
+
+\*\*\*\*[**OpenZeppelin Audit Report - Nov 2020**](https://blog.openzeppelin.com/opyn-gamma-protocol-audit/)
 
 ## Bug Bounty Program
 
