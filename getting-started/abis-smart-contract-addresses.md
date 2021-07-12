@@ -66,8 +66,8 @@ _If you don't need 0x functionality, Kovan is a better choice, since Chainlink \
 | USDC | [0x7e6edA50d1c833bE936492BF42C1BF376239E9e2](https://kovan.etherscan.io/address/0x7e6edA50d1c833bE936492BF42C1BF376239E9e2) | [ABI](https://api-kovan.etherscan.io/api?module=contract&action=getabi&address=0x7e6edA50d1c833bE936492BF42C1BF376239E9e2) |
 | WETH | [0xd0a1e359811322d97991e03f863a0c30c2cf029c](https://kovan.etherscan.io/address/0xd0a1e359811322d97991e03f863a0c30c2cf029c) | [ABI](https://api-kovan.etherscan.io/api?module=contract&action=getabi&address=0xd0a1e359811322d97991e03f863a0c30c2cf029c) |
 | WBTC | [0x50570256f0da172a1908207aAf0c80d4b279f303](https://kovan.etherscan.io/address/0x50570256f0da172a1908207aAf0c80d4b279f303) | [ABI](https://api-kovan.etherscan.io/api?module=contract&action=getabi&address=0x50570256f0da172a1908207aAf0c80d4b279f303) |
-| WETH Pricer | [0xa2245d50B7DD93b93E829818CdA258e5e92d9608](https://kovan.etherscan.io/address/0xa2245d50B7DD93b93E829818CdA258e5e92d9608) | - |
-| WBTC Pricer | [0xc68819b082b8BC7BB5e3fDF7b58F821421f9c480](https://kovan.etherscan.io/address/0xc68819b082b8BC7BB5e3fDF7b58F821421f9c480) | - |
+| WETH Pricer | [0xE21eAD94B274719203F2945C46586359bdcd0F83](https://kovan.etherscan.io/address/0xE21eAD94B274719203F2945C46586359bdcd0F83) | - |
+| WBTC Pricer | [0x5224ACaA8d841e6182C15E42F04c2a10fA7B8aBe](https://kovan.etherscan.io/address/0x5224ACaA8d841e6182C15E42F04c2a10fA7B8aBe) | - |
 
 ## Ropsten 
 
