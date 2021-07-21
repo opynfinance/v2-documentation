@@ -117,6 +117,13 @@ Fontis enables users to earn a yield by depositing assets into perpetual vaults 
 * [Site](https://fontis.finance/) 
 * [Github](https://github.com/FontisFinance/contracts)
 
+### Ziku 
+
+Ziku finance is a simple interface for new or beginner options traders to buy or sell options. Users answer a series of questions to arrive at an options position that matches their view of the crypto market, learning about options along the way. 
+
+* [Site](https://zikufinance.com/)
+* [Github](https://github.com/wisgloo/ziku)
+
 ### **Optional**
 
 Optional is creating decentralized social trading for options
