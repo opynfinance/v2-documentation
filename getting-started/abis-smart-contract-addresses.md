@@ -36,6 +36,9 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | WETH Pricer | [0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C](https://etherscan.io/address/0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C) | - |
 | WBTC Pricer | [0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d](https://etherscan.io/address/0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d) | - |
 | Permit Callee | [0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b](https://etherscan.io/address/0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b#code) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b) |
+| wstETH Pricer | [0x4661951D252993AFa69b36bcc7Ba7da4a48813bF](https://etherscan.io/address/0x4661951d252993afa69b36bcc7ba7da4a48813bf#code) |  |
+| sdecrv Pricer | [0x27a8ee0Eb39AEe580490da00ab60eCfAB2a02C40](https://etherscan.io/address/0x27a8ee0Eb39AEe580490da00ab60eCfAB2a02C40) |  |
+| yUSDC Pricer | [0x7494Ec6D7A9a9e67774Cc9B8d3aEA26A8EB59db3](https://etherscan.io/address/0x7494Ec6D7A9a9e67774Cc9B8d3aEA26A8EB59db3) |  |
 
 ## Kovan
 
