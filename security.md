@@ -8,6 +8,8 @@ We encourage our users to be mindful of risk and only use funds they can afford 
 
 Opyn's smart contracts have been audited by Trail of Bits, OpenZeppelin and Peckshield, and formally verified by Certora. 
 
+\*\*\*\*[**Monoceros Alpha Audit Report - Aug 2021**](https://github.com/monoceros-alpha/review-opyn-gamma-2021-08)\*\*\*\*
+
 \*\*\*\*[**Trail of Bits Audit Report - May 2021**](https://github.com/trailofbits/publications/blob/master/reviews/Opyn-Gamma-Protocol.pdf)\*\*\*\*
 
 \*\*\*\*[**Peckshield Audit Report - Feb 2021**](https://github.com/peckshield/publications/blob/master/audit_reports/peckshield-audit-report-Opyn-v1.0.pdf)\*\*\*\*
