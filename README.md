@@ -143,7 +143,7 @@ The locking period and dispute time periods are different for different assets. 
 
 ### How do the oracles work?
 
-Cash settlement requires an oracle to determine the payout at expiry. The Gamma protocol architecture is generalizable to allow for different oracles for different assets. We we will initially be launching ETH-USDC options collateralized with USDC. These will use the Chainlink oracle to get the ETH price. There are no liquidations needed as max loss is posted as collateral.
+Cash settlement requires an oracle to determine the payout at expiry. The Gamma protocol architecture is generalizable to allow for different oracles for different assets. We will initially be launching ETH-USDC options collateralized with USDC. These will use the Chainlink oracle to get the ETH price. There are no liquidations needed as max loss is posted as collateral.
 
 ### What is a flash mint?
 
