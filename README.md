@@ -51,39 +51,39 @@ The pricing of each oToken depends on the exchange where it is trading.
 
 On the [opyn.co](http://opyn.co) interface where oTokens trade on 0x, market makers are placing bids and asks.
 
-### Why can't I change the gas price for buy or sell transactions on the opyn.co interface? 
+### Why can't I change the gas price for buy or sell transactions on the opyn.co interface?
 
 On the opyn.co interface oTokens trade on 0x. This means that each trade requires a 0x fee which is a function of gas price. That fee needs to be sent in the transaction, so increasing the gas price alters the 0x fee causing the transaction to fail. You can lower the gas price, however lowering the gas price could cause the transaction to take too long, meaning the 0x order will expire and then the transaction will fail. For the transaction to go through we recommend confirming with the pre-set gas price.
 
-### What is market impact? 
+### What is market impact?
 
-Market impact refers to the increase in the average price of a token as the size of a market order gets larger. For larger orders, there might not be enough oTokens available at the best bid or the best ask. In this case, in order to fill the complete order, the price of some of the oTokens will be at a less favorable bid / ask. 
+Market impact refers to the increase in the average price of a token as the size of a market order gets larger. For larger orders, there might not be enough oTokens available at the best bid or the best ask. In this case, in order to fill the complete order, the price of some of the oTokens will be at a less favorable bid / ask.
 
-For example, say there is an orderbook with an ask for 15 oTokens at 100 USDC and an ask for 5 oTokens at 105 USDC. Then, if you purchase up to 15 oTokens, you can purchase each oToken for 100 USDC. However, say you wanted to purchase 17 oTokens. Then you could purchase 15 for 100 USDC and 2 for 105 USDC, so the average price for each oToken would be 100.59 USDC, meaning a 0.59% market impact. 
+For example, say there is an orderbook with an ask for 15 oTokens at 100 USDC and an ask for 5 oTokens at 105 USDC. Then, if you purchase up to 15 oTokens, you can purchase each oToken for 100 USDC. However, say you wanted to purchase 17 oTokens. Then you could purchase 15 for 100 USDC and 2 for 105 USDC, so the average price for each oToken would be 100.59 USDC, meaning a 0.59% market impact.
 
-### How does the opyn.co interface calculate total return? 
+### How does the opyn.co interface calculate total return?
 
-Total return is calculated as the difference between the initial premium and the current premium, where the current premium is the best bid or ask available. In the case that an option's in-the-money amount is greater than the amount you could sell the option for, the in-the-money amount is used to calculate the total return rather than the current premium. 
+Total return is calculated as the difference between the initial premium and the current premium, where the current premium is the best bid or ask available. In the case that an option's in-the-money amount is greater than the amount you could sell the option for, the in-the-money amount is used to calculate the total return rather than the current premium.
 
-### My hardware wallet isn't working with permit, what do I do?  
+### My hardware wallet isn't working with permit, what do I do?
 
-Some hardware wallets don't support permit signatures. In order to use a normal "approve" instead of permit signatures, you can click the "gear" icon on the top right of the order ticket and select "approve." 
+Some hardware wallets don't support permit signatures. In order to use a normal "approve" instead of permit signatures, you can click the "gear" icon on the top right of the order ticket and select "approve."
 
 ![](.gitbook/assets/screen-shot-2021-06-18-at-11.44.49-pm.png)
 
-### Do you have any tutorials on how to use the platform? 
+### Do you have any tutorials on how to use the platform?
 
-Yes! You can check them out here: 
+Yes! You can check them out here:
 
 * [Opyn v2 Tutorial](https://medium.com/opyn/how-to-trade-defi-options-opyn-v2-tutorial-aabc0a323430)
 * [Limit Order Tutorial ](https://medium.com/opyn/opyn-v2-limit-order-tutorial-10efe115ac50)
 * Partial Collateralization Tutorial \(coming soon!\) 
 
-## Limit Orders 
+## Limit Orders
 
-### How do limit orders work? 
+### How do limit orders work?
 
-Limit orders on opyn.co go through 0x and placing limit orders on Opyn is free, the taker of the order pays fees. 
+Limit orders on opyn.co go through 0x and placing limit orders on Opyn is free, the taker of the order pays fees.
 
 * Users must lock up collateral for sell limit orders
 * Users can cancel limit orders at any time by returning to the orderbook
@@ -94,16 +94,16 @@ Limit orders on opyn.co go through 0x and placing limit orders on Opyn is free, 
 * Users will be notified on screen when a limit order executes, not when a limit order expires unfilled
 * Limit orders may not execute immediately. Cancellation of orders and filling orders cost gas, which can cause orders that are crossed to sometimes occur due to gas and 0x fees
 
-To learn more about how to create limit orders on opyn.co, check out [this tutorial](https://medium.com/opyn/opyn-v2-limit-order-tutorial-10efe115ac50). 
+To learn more about how to create limit orders on opyn.co, check out [this tutorial](https://medium.com/opyn/opyn-v2-limit-order-tutorial-10efe115ac50).
 
-### Why are small limit orders less likely to be taken? 
+### Why are small limit orders less likely to be taken?
 
-Takers have to pay a [0x protocol fee](https://0x.org/docs/guides/v3-upgrade-guide#protocol-fee) when they buy or sell options. Takers have to pay this fee with each order they fill. For example: 
+Takers have to pay a [0x protocol fee](https://0x.org/docs/guides/v3-upgrade-guide#protocol-fee) when they buy or sell options. Takers have to pay this fee with each order they fill. For example:
 
 * If there was an ask for 5 oTokens and the taker wanted to purchase 5 oTokens they would only have to pay the 0x protocol fee once. 
 * However, if there were 5 asks for 1 oToken each, the taker would have to pay the 0x protocol fee 5 times. 
 
-Because of the 0x protocol fee, orders are filled based on their total cost \(bid/ask price + 0x protocol fee\), to reduce the total cost to the taker. 
+Because of the 0x protocol fee, orders are filled based on their total cost \(bid/ask price + 0x protocol fee\), to reduce the total cost to the taker.
 
 ## Building on Gamma
 
@@ -115,7 +115,7 @@ Yes, anyone can create new oTokens if a product has been whitelisted. A product 
 
 Opyn v2 allows you to create put and call options with spreads for capital efficiency, and is great for applications ranging from protection and hedging to taking views on different cryptocurrencies. Options are an incredibly versatile financial instrument - in fact you can create [any financial payoff using just put and call options.](https://www.youtube.com/watch?v=rMsu4v-UlkA&feature=youtu.be&ab_channel=MITOpenCourseWare)
 
-Check out [these use cases](https://opyn.gitbook.io/opyn/getting-started/use-cases) to learn more about what you can build, and [jump into Discord - we'd love to jam on \#dev](https://tiny.cc/opyndiscord)! 
+Check out [these use cases](https://opyn.gitbook.io/opyn/getting-started/use-cases) to learn more about what you can build, and [jump into Discord - we'd love to jam on \#dev](https://tiny.cc/opyndiscord)!
 
 ### Where can I get help?
 
@@ -133,13 +133,13 @@ Please join the \#dev channel in the Opyn community [Discord server](https://tin
 
 ### How does auto-exercise work?
 
-The protocol now has auto-exercise for in the money options, so option holders don’t need to take action before or at expiration. Upon expiry, proceeds for long and short option holders are calculated and can be redeemed at any point after the proceeds have been finalized with a settlement price. 
+The protocol now has auto-exercise for in the money options, so option holders don’t need to take action before or at expiration. Upon expiry, proceeds for long and short option holders are calculated and can be redeemed at any point after the proceeds have been finalized with a settlement price.
 
 \(Please note that auto-exercise is ONLY available for v2. For v1, you must exercise before expiry here. You can see the [v1 FAQ here](https://opyn.gitbook.io/opynv1/).\)
 
 At the time of expiry, Chainlink nodes provide a live ETHUSD price to the Chainlink aggregator. Opyn's contracts have a short locking period as it takes a short amount of time for the Chainlink oracle price for the expiry time of the options to be available. After the locking period has passed, an oracle price can be submitted. After a price has been submitted, there is a dispute period in which the price can be disputed. If the price is disputed, the disputer can update with a new price. After the dispute period has passed, the settlement value of options are finalized and users can redeem option proceeds or settle their vaults.
 
-The locking period and dispute time periods are different for different assets. Currently WETH-USDC options are available on Opyn v2. For WETH-USDC options, the locking period is 5 minutes and the dispute period is 2 hours. So while the options all expire at 8:00 UTC and are settled with the price of the underlying at 8:00 UTC, users can start to redeem at 10:05 UTC. 
+The locking period and dispute time periods are different for different assets. Currently WETH-USDC options are available on Opyn v2. For WETH-USDC options, the locking period is 5 minutes and the dispute period is 2 hours. So while the options all expire at 8:00 UTC and are settled with the price of the underlying at 8:00 UTC, users can start to redeem at 10:05 UTC.
 
 ### How do the oracles work?
 
@@ -164,9 +164,9 @@ Operators are a smart contract feature that allow users to delegate control of t
 
 Operators have full control over user funds and can take any action on behalf of a user. The only action operators cannot take is to add new operators or remove new operators.
 
-## Partial Collateralization and Liquidations 
+## Partial Collateralization and Liquidations
 
-### How does partial collateralization work? 
+### How does partial collateralization work?
 
 Users can now choose if they want to fully collateralize or partially collateralize a minted option. If a user chooses to partially collateralize their trade:
 
@@ -187,15 +187,15 @@ Risks Associated with Partial Collateralization
 * Under-collateralized positions will lead to forced liquidations
 * Possible to lose 100% of original investment prior to expiration 
 
-Margin is calculated using only a spot price, a shock to spot parameter, a conservative assumption on vol/premium, and time to expiry to give a worst case bound on the option premium. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more. 
+Margin is calculated using only a spot price, a shock to spot parameter, a conservative assumption on vol/premium, and time to expiry to give a worst case bound on the option premium. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more.
 
-### How do liquidations work? 
+### How do liquidations work?
 
 Sellers must maintain a minimum amount of collateral in their vault to secure the options they have sold. If a seller fails to do so, their vault may be liquidated and their collateral will be seized and auctioned off to repay their debts. The liquidation mechanism is a reverse dutch auction that is triggered via a Chainlink pricer with a specific timestamp.
 
-The reverse dutch auction serves as the price discovery mechanism for Opyn liquidations.The reverse dutch auction starts at a low price and then the price increases over time - liquidators will execute the trade when it is profitable. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more. 
+The reverse dutch auction serves as the price discovery mechanism for Opyn liquidations.The reverse dutch auction starts at a low price and then the price increases over time - liquidators will execute the trade when it is profitable. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more.
 
-### Why is there a minimum size required for partially collateralized positions? 
+### Why is there a minimum size required for partially collateralized positions?
 
 In order to ensure the safety of the system and make sure liquidators are incentivized to liquidate vaults even in high gas environments, we must have a minimum size required to create a partially collateralized vault. This is similar to MakerDAO's dust, which is the minimum requirement for opening a Maker vault to mint DAI. The current minimums are 1 ETH for selling call options and 2500 USDC for selling put options.
 

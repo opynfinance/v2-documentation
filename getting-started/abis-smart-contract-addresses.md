@@ -67,6 +67,7 @@ No pricer has been deployed with Arbitrum One! The protocol might not be able to
 | USDC | [0xff970a61a04b1ca14834a43f5de4533ebddb5cc8](https://arbiscan.io/address/0xff970a61a04b1ca14834a43f5de4533ebddb5cc8) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf) |
 | WETH | [0x82af49447d8a07e3bd95bd0d56f35241523fbab1](https://arbiscan.io/address/0x82af49447d8a07e3bd95bd0d56f35241523fbab1) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
 | WBTC | [0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f](https://arbiscan.io/address/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f) | [ABI](https://api.etherscan.io/api?module=contract&action=getabi&address=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
+| WETHPricer | [0x52b93393BE3600D489c7d3AA74f78516713CD40A](https://arbiscan.io/address/0x52b93393BE3600D489c7d3AA74f78516713CD40A) | - |
 
 ## Kovan
 
