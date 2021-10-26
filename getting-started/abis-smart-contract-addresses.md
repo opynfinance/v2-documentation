@@ -28,23 +28,26 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 
 #### External Contract, Pricers, Callees
 
-| Contract          | Address                                                                                                                    | ABI                                                                                                                    |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| USDC              | [0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)        | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf) |
-| WETH              | [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)        | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
-| WBTC              | [0x2260fac5e5542a773aa44fbcfedf7c193bc2c599](https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599)        | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
-| WETH Pricer       | [0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C](https://etherscan.io/address/0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C)      | -                                                                                                                      |
-| WBTC Pricer       | [0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d](https://etherscan.io/address/0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d)      | -                                                                                                                      |
-| Permit Callee     | [0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b](https://etherscan.io/address/0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b#code) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b) |
-| wstETH Pricer     | [0x4661951D252993AFa69b36bcc7Ba7da4a48813bF](https://etherscan.io/address/0x4661951d252993afa69b36bcc7ba7da4a48813bf#code) |                                                                                                                        |
-| sdecrv Pricer     | [0x27a8ee0Eb39AEe580490da00ab60eCfAB2a02C40](https://etherscan.io/address/0x27a8ee0Eb39AEe580490da00ab60eCfAB2a02C40)      |                                                                                                                        |
-| yUSDC Pricer      | [0x7494Ec6D7A9a9e67774Cc9B8d3aEA26A8EB59db3](https://etherscan.io/address/0x7494Ec6D7A9a9e67774Cc9B8d3aEA26A8EB59db3)      |                                                                                                                        |
-| sdFrax3Crv Pricer | [0xAF751EDCbB35Beb33c945BD625eB008Cd37b35d3](https://etherscan.io/address/0xaf751edcbb35beb33c945bd625eb008cd37b35d3)      |                                                                                                                        |
-| sdWbtc Pricer     | [0x4c65680554C35c27DDDb2F276f95225953513401](https://etherscan.io/address/0x4c65680554C35c27DDDb2F276f95225953513401)      |                                                                                                                        |
+| Contract          | Address                                                                                                                            | ABI                                                                                                                    |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| USDC              | [0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)                | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf) |
+| WETH              | [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)                | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
+| WBTC              | [0x2260fac5e5542a773aa44fbcfedf7c193bc2c599](https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599)                | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
+| WETH Pricer       | [0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C](https://etherscan.io/address/0x128cE9B4D97A6550905dE7d9Abc2b8C747b0996C)              | -                                                                                                                      |
+| WBTC Pricer       | [0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d](https://etherscan.io/address/0x32363cAB91EEaad10BFdd0b6Cd013CAF2595E85d)              | -                                                                                                                      |
+| Permit Callee     | [0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b](https://etherscan.io/address/0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b#code)         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x3c0638bb4b2bec6d89c09ab4a7f9e21e4586189b) |
+| wstETH Pricer     | [0x4661951D252993AFa69b36bcc7Ba7da4a48813bF](https://etherscan.io/address/0x4661951d252993afa69b36bcc7ba7da4a48813bf#code)         |                                                                                                                        |
+| sdecrv Pricer     | [0x27a8ee0Eb39AEe580490da00ab60eCfAB2a02C40](https://etherscan.io/address/0x27a8ee0Eb39AEe580490da00ab60eCfAB2a02C40)              |                                                                                                                        |
+| yUSDC Pricer      | [0x7494Ec6D7A9a9e67774Cc9B8d3aEA26A8EB59db3](https://etherscan.io/address/0x7494Ec6D7A9a9e67774Cc9B8d3aEA26A8EB59db3)              |                                                                                                                        |
+| sdFrax3Crv Pricer | [0xAF751EDCbB35Beb33c945BD625eB008Cd37b35d3](https://etherscan.io/address/0xaf751edcbb35beb33c945bd625eb008cd37b35d3)              |                                                                                                                        |
+| sdWbtc Pricer     | [0x4c65680554C35c27DDDb2F276f95225953513401](https://etherscan.io/address/0x4c65680554C35c27DDDb2F276f95225953513401)              |                                                                                                                        |
+| AAVE Pricer       | [0x204e2F3264B5200BCF0d9AC1c466CafcFa5df182](https://etherscan.io/address/0x204e2F3264B5200BCF0d9AC1c466CafcFa5df182#readContract) |                                                                                                                        |
+| SUSHI Pricer      | [0xE81462E3A2dC9696F678FcCF3402ec135b5E6AB3](https://etherscan.io/address/0xe81462e3a2dc9696f678fccf3402ec135b5e6ab3)              |                                                                                                                        |
+| UNI Pricer        | [0xb05Eaa89915Ce22F35eF44bf9A9e168DF5a51fa4](https://etherscan.io/address/0xb05Eaa89915Ce22F35eF44bf9A9e168DF5a51fa4)              |                                                                                                                        |
 
 ## Arbitrum One
 
-Gamma on Arbitrum One is currently in beta release. Use at your own risk! 
+Gamma on Arbitrum One is currently in beta release. Use at your own risk!&#x20;
 
 #### Core Modules
 
@@ -62,7 +65,7 @@ Gamma on Arbitrum One is currently in beta release. Use at your own risk!
 
 #### External Contract, Pricers, Callees
 
-No pricer has been deployed with Arbitrum One! The protocol might not be able to settle options on Arbitrum One at the moment. Contact us if you want to start building on Arbitrum One. 
+No pricer has been deployed with Arbitrum One! The protocol might not be able to settle options on Arbitrum One at the moment. Contact us if you want to start building on Arbitrum One.&#x20;
 
 | Contract   | Address                                                                                                              | ABI                                                                                                                    |
 | ---------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +106,7 @@ _If you don't need 0x functionality, Kovan is a better choice, since Chainlink (
 | WETH Pricer | [0xE21eAD94B274719203F2945C46586359bdcd0F83](https://kovan.etherscan.io/address/0xE21eAD94B274719203F2945C46586359bdcd0F83) | -                                                                                                                            |
 | WBTC Pricer | [0x5224ACaA8d841e6182C15E42F04c2a10fA7B8aBe](https://kovan.etherscan.io/address/0x5224ACaA8d841e6182C15E42F04c2a10fA7B8aBe) | -                                                                                                                            |
 
-## Ropsten 
+## Ropsten&#x20;
 
 _If you need to trade oTokens using 0x, we recommend using Ropsten, since that is the only testnet 0x supports. _
 
