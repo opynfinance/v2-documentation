@@ -14,17 +14,18 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 
 #### Core Modules
 
-| Module                   | Address                                                                                                               | ABI                                                                                                                    |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| AddressBook              | [0x1E31F2DCBad4dc572004Eae6355fB18F9615cBe4](https://etherscan.io/address/0x1E31F2DCBad4dc572004Eae6355fB18F9615cBe4) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x1E31F2DCBad4dc572004Eae6355fB18F9615cBe4) |
-| OtokenFactory            | [0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E](https://etherscan.io/address/0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E) |
-| Otoken                   | [0x7C91794b65eB573c3702229009AcD3CDe712146D](https://etherscan.io/address/0x7C91794b65eB573c3702229009AcD3CDe712146D) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7C91794b65eB573c3702229009AcD3CDe712146D) |
-| Whitelist                | [0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779](https://etherscan.io/address/0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779) |
-| Oracle                   | [0x789cD7AB3742e23Ce0952F6Bc3Eb3A73A0E08833](https://etherscan.io/address/0x789cD7AB3742e23Ce0952F6Bc3Eb3A73A0E08833) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xc497f40D1B7db6FA5017373f1a0Ec6d53126Da23) |
-| MarginPool               | [0x5934807cC0654d46755eBd2848840b616256C6Ef](https://etherscan.io/address/0x5934807cC0654d46755eBd2848840b616256C6Ef) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x5934807cC0654d46755eBd2848840b616256C6Ef) |
-| MarginCalculator         | [0xfaa67e3736572645B38AF7410B3E1006708e13F4](https://etherscan.io/address/0xfaa67e3736572645B38AF7410B3E1006708e13F4) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7A48d10f372b3D7c60f6c9770B91398e4ccfd3C7) |
-| Controller proxy         | [0x4ccc2339F87F6c59c6893E1A678c2266cA58dC72](https://etherscan.io/address/0x4ccc2339F87F6c59c6893E1A678c2266cA58dC72) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xae1e3ac020ddec3d20c8da5532002fdac62e9f86) |
-| Payable Proxy (operator) | [0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC](https://etherscan.io/address/0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) |
+| Module                                                            | Address                                                                                                               | ABI                                                                                                                    |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| AddressBook                                                       | [0x1E31F2DCBad4dc572004Eae6355fB18F9615cBe4](https://etherscan.io/address/0x1E31F2DCBad4dc572004Eae6355fB18F9615cBe4) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x1E31F2DCBad4dc572004Eae6355fB18F9615cBe4) |
+| OtokenFactory                                                     | [0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E](https://etherscan.io/address/0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E) |
+| Otoken                                                            | [0x7C91794b65eB573c3702229009AcD3CDe712146D](https://etherscan.io/address/0x7C91794b65eB573c3702229009AcD3CDe712146D) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7C91794b65eB573c3702229009AcD3CDe712146D) |
+| Whitelist                                                         | [0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779](https://etherscan.io/address/0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779) |
+| Oracle                                                            | [0x789cD7AB3742e23Ce0952F6Bc3Eb3A73A0E08833](https://etherscan.io/address/0x789cD7AB3742e23Ce0952F6Bc3Eb3A73A0E08833) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xc497f40D1B7db6FA5017373f1a0Ec6d53126Da23) |
+| MarginPool                                                        | [0x5934807cC0654d46755eBd2848840b616256C6Ef](https://etherscan.io/address/0x5934807cC0654d46755eBd2848840b616256C6Ef) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x5934807cC0654d46755eBd2848840b616256C6Ef) |
+| MarginCalculator                                                  | [0xfaa67e3736572645B38AF7410B3E1006708e13F4](https://etherscan.io/address/0xfaa67e3736572645B38AF7410B3E1006708e13F4) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7A48d10f372b3D7c60f6c9770B91398e4ccfd3C7) |
+| Controller proxy                                                  | [0x4ccc2339F87F6c59c6893E1A678c2266cA58dC72](https://etherscan.io/address/0x4ccc2339F87F6c59c6893E1A678c2266cA58dC72) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xae1e3ac020ddec3d20c8da5532002fdac62e9f86) |
+| Controller Implementation (don't make txs to this, use the proxy) | 0xCc2Fd280A669a4453B30b5E72871Ad3E2a2663D0                                                                            |                                                                                                                        |
+| Payable Proxy (operator)                                          | [0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC](https://etherscan.io/address/0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) |
 
 #### External Contract, Pricers, Callees
 
@@ -78,7 +79,7 @@ No pricer has been deployed with Arbitrum One! The protocol might not be able to
 
 ## Kovan
 
-_Note that 0x is deprecated on Kovan, so our kovan testnet won't allow creating, buying, or selling orders. We recommend testing with Ropsten if you need 0x functionality. _
+_Note that 0x is deprecated on Kovan, so our kovan testnet won't allow creating, buying, or selling orders. We recommend testing with Ropsten if you need 0x functionality._&#x20;
 
 _If you don't need 0x functionality, Kovan is a better choice, since Chainlink (our oracle source) is on Kovan and will automatically report prices._
 
@@ -110,11 +111,11 @@ _If you don't need 0x functionality, Kovan is a better choice, since Chainlink (
 
 ## Ropsten&#x20;
 
-_If you need to trade oTokens using 0x, we recommend using Ropsten, since that is the only testnet 0x supports. _
+_If you need to trade oTokens using 0x, we recommend using Ropsten, since that is the only testnet 0x supports._&#x20;
 
-_Note that Chainlink (our oracle source) doesn't support Ropsten, so if you need a historical price for a specific oToken, please reach out to us on _[_Discord_](https://discord.com/invite/2NFdXaE)_._
+_Note that Chainlink (our oracle source) doesn't support Ropsten, so if you need a historical price for a specific oToken, please reach out to us on_ [_Discord_](https://discord.com/invite/2NFdXaE)_._
 
-_Also note that the Ropsten release currently doesn't have partial collateralization as it is not yet updated to the _[_v2.0.0 release_](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)_. It will be updated in the coming weeks. _
+_Also note that the Ropsten release currently doesn't have partial collateralization as it is not yet updated to the_ [_v2.0.0 release_](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)_. It will be updated in the coming weeks._&#x20;
 
 🚰[**Testnet Faucet**](https://gammaportal.xyz/#/protocol/faucet/)
 
