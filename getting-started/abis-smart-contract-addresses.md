@@ -93,6 +93,15 @@ No pricer has been deployed with Arbitrum One! The protocol might not be able to
 | Controller proxy                                                  | [0x9e3b94819aaF6de606C4Aa844E3215725b997064](https://snowtrace.io/address/0x9e3b94819aaF6de606C4Aa844E3215725b997064)                                                                            | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xae1e3ac020ddec3d20c8da5532002fdac62e9f86) |
 | Controller Implementation (don't make txs to this, use the proxy) | [0xEadF3d94b902c06c13A2e64b223B1DF5057Aa23](https://snowtrace.io/address/0xEadF3d94b902c06c13A2e64b223B1DF5057Aa23d)[d](https://snowtrace.io/address/0xEadF3d94b902c06c13A2e64b223B1DF5057Aa23d) |                                                                                                                        |
 
+#### External Contract, Pricers, Callees
+
+| Contract     | Address                                                                                                                                         | ABI |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| WAVAX        | <p><a href="https://snowtrace.io/address/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"><br>0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7</a><br></p> |     |
+| WAVAX Pricer | [0x1E5e27df661323fba0068028a8d1110A3030f34E](https://snowtrace.io/address/0x1E5e27df661323fba0068028a8d1110A3030f34E)                           |     |
+
+##
+
 ## Kovan
 
 _Note that 0x is deprecated on Kovan, so our kovan testnet won't allow creating, buying, or selling orders. We recommend testing with Ropsten if you need 0x functionality._&#x20;
