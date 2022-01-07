@@ -10,7 +10,7 @@ description: >-
 Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)
 {% endhint %}
 
-## Mainnet
+## Ethereum Mainnet
 
 #### Core Modules
 
@@ -76,6 +76,23 @@ No pricer has been deployed with Arbitrum One! The protocol might not be able to
 | WETH       | [0x82af49447d8a07e3bd95bd0d56f35241523fbab1](https://arbiscan.io/address/0x82af49447d8a07e3bd95bd0d56f35241523fbab1) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
 | WBTC       | [0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f](https://arbiscan.io/address/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
 | WETHPricer | [0x52b93393BE3600D489c7d3AA74f78516713CD40A](https://arbiscan.io/address/0x52b93393BE3600D489c7d3AA74f78516713CD40A) | -                                                                                                                      |
+
+## Avalanche
+
+**Core Modules:**
+
+| Module                                                            | Address | ABI                                                                                                                    |
+| ----------------------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+| AddressBook                                                       |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x1E31F2DCBad4dc572004Eae6355fB18F9615cBe4) |
+| OtokenFactory                                                     |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7C06792Af1632E77cb27a558Dc0885338F4Bdf8E) |
+| Otoken                                                            |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7C91794b65eB573c3702229009AcD3CDe712146D) |
+| Whitelist                                                         |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xa5EA18ac6865f315ff5dD9f1a7fb1d41A30a6779) |
+| Oracle                                                            |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xc497f40D1B7db6FA5017373f1a0Ec6d53126Da23) |
+| MarginPool                                                        |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x5934807cC0654d46755eBd2848840b616256C6Ef) |
+| MarginCalculator                                                  |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x7A48d10f372b3D7c60f6c9770B91398e4ccfd3C7) |
+| Controller proxy                                                  |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xae1e3ac020ddec3d20c8da5532002fdac62e9f86) |
+| Controller Implementation (don't make txs to this, use the proxy) |         |                                                                                                                        |
+| Payable Proxy (operator)                                          |         | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x8f7Dd610c457FC7Cb26B0f9Db4e77581f94F70aC) |
 
 ## Kovan
 
