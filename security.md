@@ -1,22 +1,22 @@
 # Security
 
-Security is our highest priority. Our team has created a protocol that we believe is safe and dependable, and is audited by OpenZeppelin, Peckshield, and Certora. All smart contract code is publicly verifiable and we have a bug bounty for undiscovered vulnerabilities. 
+Security is our highest priority. Our team has created a protocol that we believe is safe and dependable, and is audited by OpenZeppelin, Peckshield, and Certora. All smart contract code is publicly verifiable and we have a bug bounty for undiscovered vulnerabilities.&#x20;
 
-We encourage our users to be mindful of risk and only use funds they can afford to lose. Options are complex instruments that when understood correctly can be powerful hedges. Smart contracts are still new and experimental technology. We want to remind our users to be optimistic about innovation while remaining cautious about where they put their money. 
+We encourage our users to be mindful of risk and only use funds they can afford to lose. Options are complex instruments that when understood correctly can be powerful hedges. Smart contracts are still new and experimental technology. We want to remind our users to be optimistic about innovation while remaining cautious about where they put their money.&#x20;
 
 ## Audits
 
-Opyn's smart contracts have been audited by Trail of Bits, OpenZeppelin and Peckshield, and formally verified by Certora. 
+Opyn's smart contracts have been audited by Trail of Bits, OpenZeppelin and Peckshield, and formally verified by Certora.&#x20;
 
-\*\*\*\*[**Monoceros Alpha Audit Report - Aug 2021**](https://github.com/monoceros-alpha/review-opyn-gamma-2021-08)\*\*\*\*
+****[**Monoceros Alpha Audit Report - Aug 2021**](https://github.com/monoceros-alpha/review-opyn-gamma-2021-08)****
 
-\*\*\*\*[**Trail of Bits Audit Report - May 2021**](https://github.com/trailofbits/publications/blob/master/reviews/Opyn-Gamma-Protocol.pdf)\*\*\*\*
+****[**Trail of Bits Audit Report - May 2021**](https://github.com/trailofbits/publications/blob/master/reviews/Opyn-Gamma-Protocol.pdf)****
 
-\*\*\*\*[**Peckshield Audit Report - Feb 2021**](https://github.com/peckshield/publications/blob/master/audit_reports/peckshield-audit-report-Opyn-v1.0.pdf)\*\*\*\*
+****[**Peckshield Audit Report - Feb 2021**](https://github.com/peckshield/publications/blob/master/audit\_reports/peckshield-audit-report-Opyn-v1.0.pdf)****
 
-\*\*\*\*[**Certora Formal Verification Report - Dec 2020**](https://www.certora.com/pubs/OpynGammaDec2020.pdf)
+****[**Certora Formal Verification Report - Dec 2020**](https://www.certora.com/pubs/OpynGammaDec2020.pdf)
 
-\*\*\*\*[**OpenZeppelin Audit Report - Nov 2020**](https://blog.openzeppelin.com/opyn-gamma-protocol-audit/)
+****[**OpenZeppelin Audit Report - Nov 2020**](https://blog.openzeppelin.com/opyn-gamma-protocol-audit/)
 
 ## Bug Bounty Program
 
@@ -24,7 +24,7 @@ Security is one of our highest priorities, and while Opyn's smart contracts have
 
 ### **Scope**
 
-This program is limited to the vulnerabilities affecting the [Gamma Protocol](https://github.com/opynfinance/GammaProtocol/tree/master/contracts). Submissions should be based off this [commit hash ](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)\(67a2bff57ec49c4bb7c9c454c8ad945fd5bdcf51\). 
+This program is limited to the vulnerabilities affecting the [Gamma Protocol](https://github.com/opynfinance/GammaProtocol/tree/master/contracts). Submissions should be based off this [commit hash ](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)(67a2bff57ec49c4bb7c9c454c8ad945fd5bdcf51).&#x20;
 
 The following ineligible findings are not in the scope of the program:
 
@@ -34,18 +34,18 @@ The following ineligible findings are not in the scope of the program:
   * DDOS attack
   * Spamming
 * Findings related to non-standard ERC20 tokens might be ineligible as many vulnerabilities might be inserted in non-standard ERC20 tokens on purpose for applying for this bug bounty.
-* Exploiting the vulnerability in any way, including through making it public or by obtaining a profit \(other than a reward under this Program\).
-* Duplicate vulnerabilities: Only the first reporter will be rewarded \(in compliance with the disclosure requirements\)
+* Exploiting the vulnerability in any way, including through making it public or by obtaining a profit (other than a reward under this Program).
+* Duplicate vulnerabilities: Only the first reporter will be rewarded (in compliance with the disclosure requirements)
 * Findings already known as part of a formal audit or are marked on the repo as issues.
 
 ### **Rewards**‌
 
 Severity of bugs will be assessed under the [CVSS Risk Rating](https://www.first.org/cvss/calculator/3.0) scale, as follows:‌
 
-* Critical \(9.0-10.0\): Up to $100,000
-* High \(7.0-8.9\): Up to $40,000
-* Medium \(4.0-6.9\): Up to $5,000
-* Low \(0.1-3.9\): Up to $1,000
+* Critical (9.0-10.0): Up to $1,000,000
+* High (7.0-8.9): Up to $40,000
+* Medium (4.0-6.9): Up to $5,000
+* Low (0.1-3.9): Up to $1,000
 
 In addition to assessing severity, rewards will be considered based on the impact of the discovered vulnerability as well as the level of difficulty in discovering such vulnerability.
 
@@ -66,4 +66,3 @@ Anyone who reports a unique, previously-unreported vulnerability that results in
 All reward decisions, including eligibility for and amounts of the rewards and the manner in which such rewards will be paid, are made at our sole discretion.
 
 The terms and conditions of this program may be altered at any time.
-
