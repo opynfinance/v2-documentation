@@ -48,6 +48,7 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | UNI Pricer           | [0x0890E86F880ED85cf821A448e707D47715Dd4378](https://etherscan.io/address/0x0890E86F880ED85cf821A448e707D47715Dd4378)      |                                                                                                                        |
 | DPI Pricer           | [0x32485c33378A1a866c0Bd2085bF622Ab2784Cfef](https://etherscan.io/address/0x32485c33378A1a866c0Bd2085bF622Ab2784Cfef)      |                                                                                                                        |
 | LINK Pricer          | [0x2d483f9a49Dc31471f3bB50B8ebf097E3Ec06F8c](https://etherscan.io/address/0x2d483f9a49Dc31471f3bB50B8ebf097E3Ec06F8c)      |                                                                                                                        |
+| PERP Pricer          | [0x733171b59Ed3839481cd0066076De2C3404EE66A](https://etherscan.io/address/0x733171b59ed3839481cd0066076de2c3404ee66a)      |                                                                                                                        |
 
 ## Arbitrum One
 
