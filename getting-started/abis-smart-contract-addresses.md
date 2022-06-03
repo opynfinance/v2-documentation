@@ -6,9 +6,7 @@ description: >-
 
 # Smart Contract Addresses
 
-{% hint style="info" %}
 Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0](https://github.com/opynfinance/GammaProtocol/releases/tag/v2.0.0)
-{% endhint %}
 
 ## Ethereum Mainnet
 
@@ -77,6 +75,31 @@ No pricer has been deployed with Arbitrum One! The protocol might not be able to
 | WETH       | [0x82af49447d8a07e3bd95bd0d56f35241523fbab1](https://arbiscan.io/address/0x82af49447d8a07e3bd95bd0d56f35241523fbab1) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
 | WBTC       | [0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f](https://arbiscan.io/address/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f) | [ABI](https://api.etherscan.io/api?module=contract\&action=getabi\&address=0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
 | WETHPricer | [0x52b93393BE3600D489c7d3AA74f78516713CD40A](https://arbiscan.io/address/0x52b93393BE3600D489c7d3AA74f78516713CD40A) | -                                                                                                                      |
+
+## Polygon
+
+#### Core Modules
+
+| Module                   | Address                                                                                                                  | ABI            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------ | -------------- |
+| AddressBook              | [0xa87ECDaEA486bB0baEeB77FF0630364772A6bbFE](https://polygonscan.com/address/0xa87ECDaEA486bB0baEeB77FF0630364772A6bbFE) | ABI            |
+| OtokenFactory            | [0xedD70E045903D34fBA7302B5094D37EAceb1397c](https://polygonscan.com/address/0xedd70e045903d34fba7302b5094d37eaceb1397c) | ABI            |
+| Otoken                   | [0x4B119a1198915612ff568f283f1931349297EeF6](https://polygonscan.com/address/0x4b119a1198915612ff568f283f1931349297eef6) | ABI            |
+| Whitelist                | [0x9E435A5Cb48aeE2C156a8E541ee645e1c171d012](https://polygonscan.com/address/0x9E435A5Cb48aeE2C156a8E541ee645e1c171d012) | ABI            |
+| Oracle                   | [0x3D561c832706E6e0B485A7a78958982e782E8E91](https://polygonscan.com/address/0x3d561c832706e6e0b485a7a78958982e782e8e91) | <p><br>ABI</p> |
+| MarginPool               | [0x30aE5DEBc9EdF60a23cD19494492b1ef37afA56d](https://polygonscan.com/address/0x30ae5debc9edf60a23cd19494492b1ef37afa56d) | ABI            |
+| MarginCalculator         | [0x5C16b2fae97ab59814F34632202D7DE69c45c057](https://polygonscan.com/address/0x5C16b2fae97ab59814F34632202D7DE69c45c057) | ABI            |
+| Controller proxy         | [0x7a23c712bddde52b22d8ff52e4cdadb1bcb0b203](https://polygonscan.com/address/0x7a23c712bddde52b22d8ff52e4cdadb1bcb0b203) | ABI            |
+| Payable Proxy (operator) | [0xb03036798511912359EDfff10c54E29db718f658](https://polygonscan.com/address/0xb03036798511912359edfff10c54e29db718f658) | ABI            |
+
+#### External Contract, Pricers, Callees
+
+| Contract       | Address                                                                                                                  | ABI |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------ | --- |
+| WMATIC Pricer  | [0x1F89774f01A2786bccCFbA9AF92E53b0B43c743E](https://polygonscan.com/address/0x1f89774f01a2786bcccfba9af92e53b0b43c743e) | ABI |
+| WETH Pricer    | [0xc88bd7ed473b7f6f10e71894c66ebebd467eba93](https://polygonscan.com/address/0xc88bd7ed473b7f6f10e71894c66ebebd467eba93) | ABI |
+| WBTC Pricer    | [0x7A1d9aA191aD4e5BC337b2c7EB50229391C00Fd0](https://polygonscan.com/address/0x7a1d9aa191ad4e5bc337b2c7eb50229391c00fd0) | ABI |
+| PermitCallee   | [0xC7A02eF0AFb8B5D57A3f2EBeF7560320539B8Fa3](https://polygonscan.com/address/0xc7a02ef0afb8b5d57a3f2ebef7560320539b8fa3) | ABI |
 
 ## Avalanche
 
