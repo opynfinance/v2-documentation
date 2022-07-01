@@ -46,6 +46,8 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | DPI Pricer        | [0x32485c33378A1a866c0Bd2085bF622Ab2784Cfef](https://etherscan.io/address/0x32485c33378A1a866c0Bd2085bF622Ab2784Cfef)      |                                                                                                                        |
 | LINK Pricer       | [0x2d483f9a49Dc31471f3bB50B8ebf097E3Ec06F8c](https://etherscan.io/address/0x2d483f9a49Dc31471f3bB50B8ebf097E3Ec06F8c)      |                                                                                                                        |
 | PERP Pricer       | [0x733171b59Ed3839481cd0066076De2C3404EE66A](https://etherscan.io/address/0x733171b59ed3839481cd0066076de2c3404ee66a)      |                                                                                                                        |
+| Badger Pricer     | [0x3923ae26Fcc641bfbdBBeb37fd31420597954bFB](https://etherscan.io/address/0x3923ae26Fcc641bfbdBBeb37fd31420597954bFB)      |                                                                                                                        |
+| rETH Pricer       | [0x30B3059B1E870203aef55b071110B49b22341FC6](https://etherscan.io/address/0x30B3059B1E870203aef55b071110B49b22341FC6)      |                                                                                                                        |
 
 ## Arbitrum One
 
@@ -119,10 +121,12 @@ No pricer has been deployed with Arbitrum One! The protocol might not be able to
 
 #### External Contract, Pricers, Callees
 
-| Contract     | Address                                                                                                                                         | ABI |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| WAVAX        | <p><a href="https://snowtrace.io/address/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7"><br>0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7</a><br></p> |     |
-| WAVAX Pricer | [0x1E5e27df661323fba0068028a8d1110A3030f34E](https://snowtrace.io/address/0x1E5e27df661323fba0068028a8d1110A3030f34E)                           |     |
+| Contract     | Address                                                                                                               |                        |
+| ------------ | --------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| WAVAX Pricer | [0x1E5e27df661323fba0068028a8d1110A3030f34E](https://snowtrace.io/address/0x1E5e27df661323fba0068028a8d1110A3030f34E) | (maintained by Ribbon) |
+| sAVAX Pricer | [0x0A59f35F00A482bB04d95428e1ec051cBac216C9](https://snowtrace.io/address/0x0A59f35F00A482bB04d95428e1ec051cBac216C9) | (maintained by Ribbon) |
+| WETH Pricer  | [0x17300f7e8F061B84EBd795D7A224e2875734b11B](https://snowtrace.io/address/0x17300f7e8F061B84EBd795D7A224e2875734b11B) |                        |
+| WBTC Pricer  | [0x5eB6782b62bAE3801332214A3b0d26eAf8cA2C45](https://snowtrace.io/address/0x5eB6782b62bAE3801332214A3b0d26eAf8cA2C45) |                        |
 
 ##
 
