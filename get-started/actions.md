@@ -123,7 +123,7 @@ const args = [{
     data: ZERO_ADDRESS,
 }]
 //approve collateral to margin pool
-await ERC20(USDC).approve(marginPool.address, 100 * 1*6)
+await ERC20(USDC).approve(marginPool.address, 100 * 1e6)
 await controller.operate(args)
 ```
 {% endtab %}
@@ -193,7 +193,7 @@ const args = [{
     data: ZERO_ADDRESS,
 }]
 // approve oToken collateral to margin pool
-await ERC20(ETHUSD200Put).approve(marginPool.address, 100 * 1*8)
+await ERC20(ETHUSD200Put).approve(marginPool.address, 100 * 1e8)
 await controller.operate(args)
 ```
 {% endtab %}
@@ -357,7 +357,7 @@ const args = [{
     index: 0,
     data: ZERO_ADDRESS,
 }]
-await ERC20(ETHUSD250Put).approve(marginPool.address, 1*8)
+await ERC20(ETHUSD250Put).approve(marginPool.address, 1e8)
 await controller.operate(args)
 ```
 {% endtab %}
@@ -508,7 +508,7 @@ const args = [
     }
 ]
 //approve collateral to margin pool
-await ERC20(USDC).approve(marginPool.address, 100 * 1*6)
+await ERC20(USDC).approve(marginPool.address, 100 * 1e6)
 await controller.operate(args)
 ```
 {% endtab %}
@@ -577,9 +577,9 @@ const args = [
     }
 ]
 // approve oToken collateral to margin pool
-await ERC20(ETHUSD200Put).approve(marginPool.address, 100 * 1*8)
+await ERC20(ETHUSD200Put).approve(marginPool.address, 100 * 1e8)
 //approve USDC collateral to margin pool
-await ERC20(USDC).approve(marginPool.address, 100 * 1*6)
+await ERC20(USDC).approve(marginPool.address, 100 * 1e6)
 await controller.operate(args)
 ```
 {% endtab %}
