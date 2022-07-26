@@ -16,7 +16,7 @@ Here are some resources to learn more about options:
 * [Investopedia](https://www.investopedia.com/options-basics-tutorial-4583012)
 * [Beginner's Guide to DeFi Options](https://medium.com/opyn/a-beginners-guide-to-defi-options-opyn-v2-4d64f91acc84)
 
-There are also lots of great conversations on our [discord](https://tiny.cc/opyndiscord), and we’re happy to answer any questions :\)
+There are also lots of great conversations on our [discord](https://tiny.cc/opyndiscord), and we’re happy to answer any questions :)
 
 ### What kind of options are available on Opyn?
 
@@ -25,23 +25,23 @@ Opyn v2 offers European, cash-settled options that auto-exercise upon expiry.
 * European options mean that option holders can exercise options only upon expiry
 * Cash settlement means that option holders don’t have to provide the underlying asset in order to exercise. Rather, the options are settled in the collateral asset, and option holders receive the difference between the price of the underlying asset at expiry and the strike price from option sellers.
 
-![](.gitbook/assets/1_-qwbokj2s9junyx2zztr2q.png)
+![](.gitbook/assets/1\_-qwbokj2s9junyx2zztr2q.png)
 
-* The protocol now has auto-exercise for [in the money](https://www.investopedia.com/terms/i/inthemoney.asp#:~:text=Key%20Takeaways,at%20the%20money%20%28ATM%29.) options, so option holders don’t need to take action before or at expiration. Upon expiry, proceeds for long and short option holders are calculated and can be redeemed at any point after the proceeds have been finalized with a settlement price. Users can redeem by clicking a "redeem" button on the interface after expiry.
+* The protocol now has auto-exercise for [in the money](https://www.investopedia.com/terms/i/inthemoney.asp) options, so option holders don’t need to take action before or at expiration. Upon expiry, proceeds for long and short option holders are calculated and can be redeemed at any point after the proceeds have been finalized with a settlement price. Users can redeem by clicking a "redeem" button on the interface after expiry.
 
 ### What is a spread?
 
 Spreads enable long oTokens to collateralize short oTokens, enabling users to post the max loss of a structure as collateral.
 
-![](.gitbook/assets/1_zoa92pkqgtwe55mku9ebbq.png)
+![](.gitbook/assets/1\_zoa92pkqgtwe55mku9ebbq.png)
 
-![](.gitbook/assets/1_lud5uwbxrt-6hqo2_pf7tq.png)
+![](.gitbook/assets/1\_lud5uwbxrt-6hqo2\_pf7tq.png)
 
 ## Trading
 
 ### Where do oTokens trade?
 
-Opyn options \(oTokens\) are ERC20s, so they can be trading on any decentralized exchange that follows the ERC20 standard.
+Opyn options (oTokens) are ERC20s, so they can be trading on any decentralized exchange that follows the ERC20 standard.
 
 On [opyn.co](http://opyn.co) interface they trade on 0x.
 
@@ -77,7 +77,7 @@ Yes! You can check them out here:
 
 * [Opyn v2 Tutorial](https://medium.com/opyn/how-to-trade-defi-options-opyn-v2-tutorial-aabc0a323430)
 * [Limit Order Tutorial ](https://medium.com/opyn/opyn-v2-limit-order-tutorial-10efe115ac50)
-* Partial Collateralization Tutorial \(coming soon!\) 
+* Partial Collateralization Tutorial (coming soon!)&#x20;
 
 ## Limit Orders
 
@@ -100,10 +100,10 @@ To learn more about how to create limit orders on opyn.co, check out [this tutor
 
 Takers have to pay a [0x protocol fee](https://0x.org/docs/guides/v3-upgrade-guide#protocol-fee) when they buy or sell options. Takers have to pay this fee with each order they fill. For example:
 
-* If there was an ask for 5 oTokens and the taker wanted to purchase 5 oTokens they would only have to pay the 0x protocol fee once. 
-* However, if there were 5 asks for 1 oToken each, the taker would have to pay the 0x protocol fee 5 times. 
+* If there was an ask for 5 oTokens and the taker wanted to purchase 5 oTokens they would only have to pay the 0x protocol fee once.&#x20;
+* However, if there were 5 asks for 1 oToken each, the taker would have to pay the 0x protocol fee 5 times.&#x20;
 
-Because of the 0x protocol fee, orders are filled based on their total cost \(bid/ask price + 0x protocol fee\), to reduce the total cost to the taker.
+Because of the 0x protocol fee, orders are filled based on their total cost (bid/ask price + 0x protocol fee), to reduce the total cost to the taker.
 
 ## Building on Gamma
 
@@ -113,13 +113,13 @@ Yes, anyone can create new oTokens if a product has been whitelisted. A product 
 
 ### What can I build on Gamma?
 
-Opyn v2 allows you to create put and call options with spreads for capital efficiency, and is great for applications ranging from protection and hedging to taking views on different cryptocurrencies. Options are an incredibly versatile financial instrument - in fact you can create [any financial payoff using just put and call options.](https://www.youtube.com/watch?v=rMsu4v-UlkA&feature=youtu.be&ab_channel=MITOpenCourseWare)
+Opyn v2 allows you to create put and call options with spreads for capital efficiency, and is great for applications ranging from protection and hedging to taking views on different cryptocurrencies. Options are an incredibly versatile financial instrument - in fact you can create [any financial payoff using just put and call options.](https://www.youtube.com/watch?v=rMsu4v-UlkA\&feature=youtu.be\&ab\_channel=MITOpenCourseWare)
 
-Check out [these use cases](https://opyn.gitbook.io/opyn/getting-started/use-cases) to learn more about what you can build, and [jump into Discord - we'd love to jam on \#dev](https://tiny.cc/opyndiscord)!
+Check out [these use cases](https://opyn.gitbook.io/opyn/getting-started/use-cases) to learn more about what you can build, and [jump into Discord - we'd love to jam on #dev](https://tiny.cc/opyndiscord)!
 
 ### Where can I get help?
 
-Please join the \#dev channel in the Opyn community [Discord server](https://tiny.cc/opyndiscord). We're always happy to help, so don't hesitate to ask questions!
+Please join the #dev channel in the Opyn community [Discord server](https://tiny.cc/opyndiscord). We're always happy to help, so don't hesitate to ask questions!
 
 ## Under the Hood
 
@@ -135,11 +135,11 @@ Please join the \#dev channel in the Opyn community [Discord server](https://tin
 
 The protocol now has auto-exercise for in the money options, so option holders don’t need to take action before or at expiration. Upon expiry, proceeds for long and short option holders are calculated and can be redeemed at any point after the proceeds have been finalized with a settlement price.
 
-\(Please note that auto-exercise is ONLY available for v2. For v1, you must exercise before expiry here. You can see the [v1 FAQ here](https://opyn.gitbook.io/opynv1/).\)
+(Please note that auto-exercise is ONLY available for v2. For v1, you must exercise before expiry here. You can see the [v1 FAQ here](https://opyn.gitbook.io/opynv1/).)
 
 At the time of expiry, Chainlink nodes provide a live ETHUSD price to the Chainlink aggregator. Opyn's contracts have a short locking period as it takes a short amount of time for the Chainlink oracle price for the expiry time of the options to be available. After the locking period has passed, an oracle price can be submitted. After a price has been submitted, there is a dispute period in which the price can be disputed. If the price is disputed, the disputer can update with a new price. After the dispute period has passed, the settlement value of options are finalized and users can redeem option proceeds or settle their vaults.
 
-The locking period and dispute time periods are different for different assets. Currently WETH-USDC options are available on Opyn v2. For WETH-USDC options, the locking period is 5 minutes and the dispute period is 2 hours. So while the options all expire at 8:00 UTC and are settled with the price of the underlying at 8:00 UTC, users can start to redeem at 10:05 UTC.
+The locking period and dispute time periods are different for different assets. Currently WETH-USDC options are available on Opyn v2. For WETH-USDC options, the locking period is 5 minutes and the dispute period is 1 hour. So while the options all expire at 8:00 UTC and are settled with the price of the underlying at 8:00 UTC, users can start to redeem at 10:05 UTC.
 
 ### How do the oracles work?
 
@@ -153,7 +153,7 @@ Some use cases for flash mint include:
 
 * Arbitrage between dexes or exchanges
 * Allows order of operations of transactions not to matter, you can mint and sell options first, and then add collateral in the same transaction
-* Allows users to do interesting operations like deposit partial collateral and use the premium received as the rest of the collateral \(ie sell options before they are fully collateralized and then fully collateralize using the proceeds of the sale\)
+* Allows users to do interesting operations like deposit partial collateral and use the premium received as the rest of the collateral (ie sell options before they are fully collateralized and then fully collateralize using the proceeds of the sale)
 * Probably many more cool things that we haven't thought of yet!
 
 All of these actions have to be done atomically, within a single transaction. Collateralization is checked at the end of all of these operations/actions and if the collateralization is not correct, it is as if the prior actions/operations never happened and the transaction reverts.
@@ -178,14 +178,14 @@ With partial collateralization, excess capital is now free to either standby ris
 Benefits of Partial Collateralization
 
 * Increased upside leverage
-* Enhanced capital efficiency 
-* More portfolio flexibility 
+* Enhanced capital efficiency&#x20;
+* More portfolio flexibility&#x20;
 
 Risks Associated with Partial Collateralization
 
 * Greater downside leverage
 * Under-collateralized positions will lead to forced liquidations
-* Possible to lose 100% of original investment prior to expiration 
+* Possible to lose 100% of original investment prior to expiration&#x20;
 
 Margin is calculated using only a spot price, a shock to spot parameter, a conservative assumption on vol/premium, and time to expiry to give a worst case bound on the option premium. Check out [this post](https://medium.com/opyn/partially-collateralized-options-now-in-defi-b9d223eb3f4d) to learn more.
 
@@ -231,4 +231,3 @@ The protocol currently has the following privileged roles:
 ### Help! I can’t access Opyn!
 
 ‌Opyn’s smart contracts are on the Ethereum blockchain and are thus always available. If Metamask, or the [Opyn](http://opyn.co/) interface are unavailable, you can always[ access Opyn through the smart contracts](https://opyn.gitbook.io/opyn-v2/get-started/abis-smart-contract-addresses)[.](https://opyn.gitbook.io/opyn/abis-smart-contract-addresses) We also encourage the community to build interfaces to the Opyn v2 protocol.
-
