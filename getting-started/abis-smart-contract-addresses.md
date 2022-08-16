@@ -48,6 +48,7 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | PERP Pricer       | [0x733171b59Ed3839481cd0066076De2C3404EE66A](https://etherscan.io/address/0x733171b59ed3839481cd0066076de2c3404ee66a)      |                                                                                                                        |
 | Badger Pricer     | [0x3923ae26Fcc641bfbdBBeb37fd31420597954bFB](https://etherscan.io/address/0x3923ae26Fcc641bfbdBBeb37fd31420597954bFB)      |                                                                                                                        |
 | rETH Pricer       | [0x30B3059B1E870203aef55b071110B49b22341FC6](https://etherscan.io/address/0x30B3059B1E870203aef55b071110B49b22341FC6)      |                                                                                                                        |
+| Spell Pricer      | [0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A](https://etherscan.io/address/0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A)      |                                                                                                                        |
 
 ## Arbitrum One
 
