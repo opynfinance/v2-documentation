@@ -50,6 +50,47 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | rETH Pricer       | [0x30B3059B1E870203aef55b071110B49b22341FC6](https://etherscan.io/address/0x30B3059B1E870203aef55b071110B49b22341FC6)      |                                                                                                                        |
 | Spell Pricer      | [0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A](https://etherscan.io/address/0x45fdC9ccbb385C6C921F7085B91EDEcBb5cFA95A)      |                                                                                                                        |
 
+## Goerli
+
+#### Core Modules
+
+| Module                                                            | Address                                    |
+| ----------------------------------------------------------------- | ------------------------------------------ |
+| AddressBook                                                       | 0x52b93393BE3600D489c7d3AA74f78516713CD40A |
+| OtokenFactory                                                     | 0xc4D15025D49a88D70B023870d810f4cAa5c18a63 |
+| Otoken                                                            | 0xCc2Fd280A669a4453B30b5E72871Ad3E2a2663D0 |
+| Whitelist                                                         | 0xCBA5839785178815ed2380D6116e3550305b98DD |
+| Oracle                                                            | 0x3084dCC0Ab2f73E1Ca7d435DAE765a8A5f9AF949 |
+| MarginPool                                                        | 0xf0eb37ea4f6479626e56103E60Fc989A5Ba5e742 |
+| MarginCalculator                                                  | 0x236e87D24174242B69b35335Ac40F5bda116c490 |
+| Controller proxy                                                  | 0x024bd43241d704d99b6ca24dc9919bd6124f4af6 |
+| Controller Implementation (don't make txs to this, use the proxy) | 0x01062B3ac205c5E8DEF3973dfeb4A8392bFf6f3a |
+
+#### External Contract, Pricers, Callees
+
+| Contract          | Address                                    |
+| ----------------- | ------------------------------------------ |
+| USDC              | 0xd87ba7a50b2e7e660f678a895e4b72e7cb4ccd9c |
+| WETH              | 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6 |
+| WBTC              |                                            |
+| WETH Pricer       |                                            |
+| WBTC Pricer       |                                            |
+| Permit Callee     |                                            |
+| wstETH Pricer     |                                            |
+| sdecrv Pricer     |                                            |
+| yvUSDC Pricer     |                                            |
+| sdFrax3Crv Pricer |                                            |
+| sdWbtc Pricer     |                                            |
+| AAVE Pricer       |                                            |
+| SUSHI Pricer      |                                            |
+| UNI Pricer        |                                            |
+| DPI Pricer        |                                            |
+| LINK Pricer       |                                            |
+| PERP Pricer       |                                            |
+| Badger Pricer     |                                            |
+| rETH Pricer       |                                            |
+| Spell Pricer      |                                            |
+
 ## Arbitrum One
 
 Gamma on Arbitrum One is currently in beta release. Use at your own risk!&#x20;
