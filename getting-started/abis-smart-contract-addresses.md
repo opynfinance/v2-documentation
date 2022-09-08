@@ -56,15 +56,16 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 
 | Module                                                            | Address                                    |
 | ----------------------------------------------------------------- | ------------------------------------------ |
-| AddressBook                                                       | 0x52b93393BE3600D489c7d3AA74f78516713CD40A |
-| OtokenFactory                                                     | 0xc4D15025D49a88D70B023870d810f4cAa5c18a63 |
-| Otoken                                                            | 0xCc2Fd280A669a4453B30b5E72871Ad3E2a2663D0 |
-| Whitelist                                                         | 0xCBA5839785178815ed2380D6116e3550305b98DD |
-| Oracle                                                            | 0x3084dCC0Ab2f73E1Ca7d435DAE765a8A5f9AF949 |
-| MarginPool                                                        | 0xf0eb37ea4f6479626e56103E60Fc989A5Ba5e742 |
-| MarginCalculator                                                  | 0x236e87D24174242B69b35335Ac40F5bda116c490 |
+| AddressBook                                                       | 0x234241E33909F3dA1fB2B9DC2bCa2BB5116f50eE |
+| OtokenFactory                                                     | 0xd7A7ec5c82b847A3d30Fed3052f5C2bb42069317 |
+| Otoken                                                            | 0x019C7DDa0F104Fc16D89E7cF95e3125723410883 |
+| Whitelist                                                         | 0x14235E3AEEFc155D6d48fA942ee84F15Cbd62a28 |
+| Oracle                                                            | 0xCb8504119B215428aFc265e20BD42eE40F86D7f9 |
+| MarginPool                                                        | 0xdE576696Ed6e64328355d5c87fC031e1198609F6 |
+| BorrowableMarginPool                                              | 0xD15B1dC8aa79609A0Ef91E8692a937ACF73ba71e |
+| MarginCalculator                                                  | 0xAc536Eb464dF9284f9BEB02226329827Ed69Cd5D |
 | Controller proxy                                                  | 0x024bd43241d704d99b6ca24dc9919bd6124f4af6 |
-| Controller Implementation (don't make txs to this, use the proxy) | 0x01062B3ac205c5E8DEF3973dfeb4A8392bFf6f3a |
+| Controller Implementation (don't make txs to this, use the proxy) | 0x26266d75cde669F0c3B8156d60b1A2395b742D7F |
 
 #### External Contract, Pricers, Callees
 
