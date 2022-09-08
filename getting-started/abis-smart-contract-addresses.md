@@ -73,7 +73,7 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | ----------------- | ------------------------------------------ |
 | USDC              | 0xd87ba7a50b2e7e660f678a895e4b72e7cb4ccd9c |
 | WETH              | 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6 |
-| WBTC              |                                            |
+| WBTC              | 0xC04B0d3107736C32e19F1c62b2aF67BE61d63a05 |
 | WETH Pricer       |                                            |
 | WBTC Pricer       |                                            |
 | Permit Callee     |                                            |
