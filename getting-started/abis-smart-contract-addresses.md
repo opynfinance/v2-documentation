@@ -64,7 +64,7 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 | MarginPool                                                        | 0xdE576696Ed6e64328355d5c87fC031e1198609F6 |
 | BorrowableMarginPool                                              | 0xD15B1dC8aa79609A0Ef91E8692a937ACF73ba71e |
 | MarginCalculator                                                  | 0xAc536Eb464dF9284f9BEB02226329827Ed69Cd5D |
-| Controller proxy                                                  | 0x024bd43241d704d99b6ca24dc9919bd6124f4af6 |
+| Controller proxy                                                  | 0x45fD0117d2eE5d70840880cCDcD3e03Dc328aef1 |
 | Controller Implementation (don't make txs to this, use the proxy) | 0x26266d75cde669F0c3B8156d60b1A2395b742D7F |
 
 #### External Contract, Pricers, Callees
