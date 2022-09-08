@@ -69,28 +69,13 @@ Github release of deployed code: [https://github.com/opynfinance/GammaProtocol/r
 
 #### External Contract, Pricers, Callees
 
-| Contract          | Address                                    |
-| ----------------- | ------------------------------------------ |
-| USDC              | 0xd87ba7a50b2e7e660f678a895e4b72e7cb4ccd9c |
-| WETH              | 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6 |
-| WBTC              | 0xC04B0d3107736C32e19F1c62b2aF67BE61d63a05 |
-| WETH Pricer       |                                            |
-| WBTC Pricer       |                                            |
-| Permit Callee     |                                            |
-| wstETH Pricer     |                                            |
-| sdecrv Pricer     |                                            |
-| yvUSDC Pricer     |                                            |
-| sdFrax3Crv Pricer |                                            |
-| sdWbtc Pricer     |                                            |
-| AAVE Pricer       |                                            |
-| SUSHI Pricer      |                                            |
-| UNI Pricer        |                                            |
-| DPI Pricer        |                                            |
-| LINK Pricer       |                                            |
-| PERP Pricer       |                                            |
-| Badger Pricer     |                                            |
-| rETH Pricer       |                                            |
-| Spell Pricer      |                                            |
+| Contract    | Address                                    |
+| ----------- | ------------------------------------------ |
+| USDC        | 0xd87ba7a50b2e7e660f678a895e4b72e7cb4ccd9c |
+| WETH        | 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6 |
+| WBTC        | 0xC04B0d3107736C32e19F1c62b2aF67BE61d63a05 |
+| WETH Pricer | 0x40E0F0443659e7c021E3f12fE42d46A70E6A454e |
+| WBTC Pricer | 0xD820d080A4A73D1b9A8a4b1636a1a8450D240f2b |
 
 ## Arbitrum One
 
